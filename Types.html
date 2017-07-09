@@ -1,0 +1,505 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="generator" content="HelpNDoc Personal Edition 5.2.0.265">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="favicon.ico"/>
+
+  <title>Types</title>
+  <meta name="description" content="tyetyurtyurtyurtyurtyurtyurtu" /> 
+  <meta name="keywords" content="">
+
+
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Types">
+  <meta name="twitter:description" content="tyetyurtyurtyurtyurtyurtyurtu">
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="Types" />
+  <meta property="og:type" content="article" />
+  <meta property="og:description" content="tyetyurtyurtyurtyurtyurtyurtu" />
+  <meta property="og:site_name" content="R Knowledge Base" /> 
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendors/bootstrap-3.3.6/css/bootstrap.min.css" rel="stylesheet"/>
+
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <link href="vendors/bootstrap-3.3.6/css/ie10-viewport-bug-workaround.css" rel="stylesheet"/>
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+      <script src="vendors/html5shiv-3.7.2/html5shiv.min.js"></script>
+      <script src="vendors/respond-1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  <!-- JsTree styles -->
+  <link href="vendors/jstree-3.3.2/themes/default/style.min.css" rel="stylesheet"/>
+
+  <!-- Hnd styles -->
+  <link href="css/layout.min.css" rel="stylesheet" />
+  <link href="css/effects.min.css" rel="stylesheet" />
+  <link href="css/theme-light-blue.min.css" rel="stylesheet" />
+  <link href="css/print.min.css" rel="stylesheet" media="print" />
+  <style type="text/css">nav { width: 350px} @media screen and (min-width:769px) { body.md-nav-expanded #main { margin-left: 350px} body.md-nav-expanded header { padding-left: 364px} }</style>
+
+  <!-- Content style -->
+  <link href="css/hnd.content.css" rel="stylesheet" />
+
+  
+
+
+
+</head>
+
+<body class="md-nav-expanded">
+
+
+
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible">Skip to main content</a>
+  </div>
+
+  <header class="headroom">
+    <button class="hnd-toggle btn btn-default">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>        
+    </button>
+    <h1>R Knowledge Base</h1>
+    
+  </header>
+
+  <nav class="md-nav-expanded">
+    <!-- Nav tabs -->
+    <ul class="tab-tabs nav nav-tabs" role="tablist">
+      <li id="nav-close"> 
+        <button class="hnd-toggle btn btn-default">
+          <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+        </button>
+      </li>
+      
+	  
+        <li role="presentation" class="tab active">
+            <a href="#contents" aria-controls="contents" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-list"></i>
+                Contents
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#index" aria-controls="index" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-asterisk"></i>
+                Index
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#search" aria-controls="search" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-search"></i>
+                Search
+            </a>
+        </li>
+      
+    </ul>  <!-- /Nav tabs -->
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+	  
+      <div role="tabpanel" class="tab-pane active" id="contents">
+        <div id="toc" class="tree-container unselectable"
+            data-url="_toc.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /contents-->
+      
+      <div role="tabpanel" class="tab-pane" id="index">
+        <div id="keywords" class="tree-container unselectable"
+            data-url="_keywords.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /index-->
+      
+      <div role="tabpanel" class="tab-pane" id="search">
+        <div class="search-content">
+          <div class="search-input">
+            <form id="search-form">
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="input-search" name="input-search" placeholder="Search..." />
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit">
+                      <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </form>
+          </div>  <!-- /search-input -->
+          <div class="search-result">
+            <div id="search-info"></div>
+            <div class="tree-container unselectable" id="search-tree"></div>
+          </div>  <!-- /search-result -->
+        </div>  <!-- /search-content -->
+      </div>  <!-- /search-->
+      
+    </div>  <!-- /Tab panes -->
+
+  </nav>
+
+  <div id="main">
+
+    <article>
+        <div id="topic-content" class="container-fluid" 
+		  data-hnd-id="Types"
+		  data-hnd-context="4"
+		  data-hnd-title="Types"
+		>
+            
+                <div class="navigation">
+                    <ol class="breadcrumb">
+                        <li><a href="RConcepts.html">R Concepts</a></li>
+                    </ol>
+                    <div class="nav-arrows">
+                        <div class="btn-group btn-group-xs" role="group"><a class="btn btn-default" href="RConcepts.html" title="R Concepts" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a><a class="btn btn-default" href="FunctionDefinitions.html" title="Function Definitions" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="AtomicTypes.html" title="Atomic Types" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
+                    </div>
+                </div> 
+            
+
+            <a id="main-content"></a>
+
+            <h2>Types</h2>
+
+            <div class="main-content">
+                
+<p></p>
+<p class="rvps2"><span class="rvts16">The R documentation uses the term 'type' heavily, yet does not define it. Sometimes it is a synonym for object, and elsewhere it includes otther things. For example, at the top of the official documentation </span><a class="rvts23" href="https://cran.r-project.org/doc/manuals/r-release/R-lang.html">https://cran.r-project.org/doc/manuals/r-release/R-lang.html</a></p>
+<p class="rvps2"><span class="rvts16">we see this:</span></p>
+<p class="rvps2"><span class="rvts16"><br/></span></p>
+<p class="rvps2"><a name="TOC-OBJECTS-1"></a>
+<a class="rvts81" href="https://cran.r-project.org/doc/manuals/r-release/R-lang.html#Objects">2 Objects</a></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside;">
+<li class="rvps31"><a name="TOC-BASIC-TYPES-1"></a>
+<a class="rvts81" href="https://cran.r-project.org/doc/manuals/r-release/R-lang.html#Basic-types">2.1 Basic types</a></li>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside;">
+<li class="rvps31"><a name="TOC-VECTORS"></a>
+<a class="rvts81" href="https://cran.r-project.org/doc/manuals/r-release/R-lang.html#Vector-objects">2.1.1 Vectors</a></li>
+<li class="rvps31"><a name="TOC-LISTS"></a>
+<a class="rvts81" href="https://cran.r-project.org/doc/manuals/r-release/R-lang.html#List-objects">2.1.2 Lists</a></li>
+<li class="rvps31"><a name="TOC-LANGUAGE-OBJECTS-1"></a>
+<a class="rvts81" href="https://cran.r-project.org/doc/manuals/r-release/R-lang.html#Language-objects">2.1.3 Language objects</a></li>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside;">
+<li class="rvps31"><a name="TOC-SYMBOL-OBJECTS-1"></a>
+<a class="rvts81" href="https://cran.r-project.org/doc/manuals/r-release/R-lang.html#Symbol-objects">2.1.3.1 Symbol objects</a></li>
+</ul>
+<li class="rvps31"><a name="TOC-EXPRESSION-OBJECTS-1"></a>
+<a class="rvts81" href="https://cran.r-project.org/doc/manuals/r-release/R-lang.html#Expression-objects">2.1.4 Expression objects</a></li>
+<li class="rvps31"><a name="TOC-FUNCTION-OBJECTS-1"></a>
+<a class="rvts81" href="https://cran.r-project.org/doc/manuals/r-release/R-lang.html#Function-objects">2.1.5 Function objects</a></li>
+<li class="rvps31"><a name="TOC-NULL"></a>
+<a class="rvts81" href="https://cran.r-project.org/doc/manuals/r-release/R-lang.html#NULL-object">2.1.6 NULL</a></li>
+<li class="rvps31"><a name="TOC-BUILTIN-OBJECTS-AND-SPECIAL-FORMS-1"></a>
+<a class="rvts81" href="https://cran.r-project.org/doc/manuals/r-release/R-lang.html#Builtin-objects-and-special-forms">2.1.7 Builtin objects and special forms</a></li>
+<li class="rvps31"><a name="TOC-PROMISE-OBJECTS-1"></a>
+<a class="rvts81" href="https://cran.r-project.org/doc/manuals/r-release/R-lang.html#Promise-objects">2.1.8 Promise objects</a></li>
+<li class="rvps31"><a name="TOC-DOT_002DDOT_002DDOT-1"></a>
+<a class="rvts81" href="https://cran.r-project.org/doc/manuals/r-release/R-lang.html#Dot_002ddot_002ddot">2.1.9 Dot-dot-dot</a></li>
+<li class="rvps31"><a name="TOC-ENVIRONMENTS"></a>
+<a class="rvts81" href="https://cran.r-project.org/doc/manuals/r-release/R-lang.html#Environment-objects">2.1.10 Environments</a></li>
+<li class="rvps31"><a name="TOC-PAIRLIST-OBJECTS-1"></a>
+<a class="rvts81" href="https://cran.r-project.org/doc/manuals/r-release/R-lang.html#Pairlist-objects">2.1.11 Pairlist objects</a></li>
+<li class="rvps31"><a name="TOC-THE-_0060_0060ANY_0027_0027-TYPE"></a>
+<a class="rvts81" href="https://cran.r-project.org/doc/manuals/r-release/R-lang.html#Any_002dtype">2.1.12 The “Any” type</a></li>
+</ul>
+<li class="rvps31"><a name="TOC-ATTRIBUTES-1"></a>
+<a class="rvts81" href="https://cran.r-project.org/doc/manuals/r-release/R-lang.html#Attributes">2.2 Attributes</a></li>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside;">
+<li class="rvps31"><a name="TOC-NAMES-1"></a>
+<a class="rvts81" href="https://cran.r-project.org/doc/manuals/r-release/R-lang.html#Names">2.2.1 Names</a></li>
+<li class="rvps31"><a name="TOC-DIMENSIONS-1"></a>
+<a class="rvts81" href="https://cran.r-project.org/doc/manuals/r-release/R-lang.html#Dimensions">2.2.2 Dimensions</a></li>
+<li class="rvps31"><a name="TOC-DIMNAMES-1"></a>
+<a class="rvts81" href="https://cran.r-project.org/doc/manuals/r-release/R-lang.html#Dimnames">2.2.3 Dimnames</a></li>
+<li class="rvps31"><a name="TOC-CLASSES-1"></a>
+<a class="rvts81" href="https://cran.r-project.org/doc/manuals/r-release/R-lang.html#Classes">2.2.4 Classes</a></li>
+<li class="rvps31"><a name="TOC-TIME-SERIES-ATTRIBUTES-1"></a>
+<a class="rvts81" href="https://cran.r-project.org/doc/manuals/r-release/R-lang.html#Time-series-attributes">2.2.5 Time series attributes</a></li>
+<li class="rvps31"><a name="TOC-COPYING-OF-ATTRIBUTES-1"></a>
+<a class="rvts81" href="https://cran.r-project.org/doc/manuals/r-release/R-lang.html#Copying-of-attributes">2.2.6 Copying of attributes</a></li>
+</ul>
+<li class="rvps31"><a name="TOC-SPECIAL-COMPOUND-OBJECTS-1"></a>
+<a class="rvts81" href="https://cran.r-project.org/doc/manuals/r-release/R-lang.html#Special-compound-objects">2.3 Special compound objects</a></li>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside;">
+<li class="rvps31"><a name="TOC-FACTORS-1"></a>
+<a class="rvts81" href="https://cran.r-project.org/doc/manuals/r-release/R-lang.html#Factors">2.3.1 Factors</a></li>
+<li class="rvps31"><a name="TOC-DATA-FRAME-OBJECTS-1"></a>
+<a class="rvts81" href="https://cran.r-project.org/doc/manuals/r-release/R-lang.html#Data-frame-objects">2.3.2 Data frame objects</a></li>
+</ul></ul>
+<p class="rvps31"><span class="rvts25"><br/></span></p>
+<p class="rvps31"><span class="rvts27">We can &nbsp;also find the terms "atomic class" , "internal type" &nbsp;and "atomic mode" &nbsp;as well.</span></p>
+<p class="rvps31"><span class="rvts27"><br/></span></p>
+<div class="rvps2"><table border="0" cellpadding="1" cellspacing="2" style="border-width: 0px; border-spacing: 2px;">
+<tr valign="top">
+<td width="20%" valign="middle" style="padding: 1px;"><p class="rvps2"><span class="rvts92">"NULL"</span></p>
+</td>
+<td width="70%" valign="middle" style="padding: 1px;"><p class="rvps2"><span class="rvts40">NULL</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="20%" valign="middle" style="padding: 1px;"><p class="rvps2"><span class="rvts92">"symbol"</span></p>
+</td>
+<td width="70%" valign="middle" style="padding: 1px;"><p class="rvps2"><span class="rvts40">a variable name</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="20%" valign="middle" style="padding: 1px;"><p class="rvps2"><span class="rvts92">"pairlist"</span></p>
+</td>
+<td width="70%" valign="middle" style="padding: 1px;"><p class="rvps2"><span class="rvts40">a pairlist object (mainly internal)</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="20%" valign="middle" style="padding: 1px;"><p class="rvps2"><span class="rvts92">"closure"</span></p>
+</td>
+<td width="70%" valign="middle" style="padding: 1px;"><p class="rvps2"><span class="rvts40">a function</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="20%" valign="middle" style="padding: 1px;"><p class="rvps2"><span class="rvts92">"environment"</span></p>
+</td>
+<td width="70%" valign="middle" style="padding: 1px;"><p class="rvps2"><a name="INDEX-EVALUATION_002C-LAZY"></a>
+<span class="rvts40">an environment</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="20%" valign="middle" style="padding: 1px;"><p class="rvps2"><span class="rvts92">"promise"</span></p>
+</td>
+<td width="70%" valign="middle" style="padding: 1px;"><p class="rvps2"><span class="rvts40">an object used to implement lazy evaluation</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="20%" valign="middle" style="padding: 1px;"><p class="rvps2"><span class="rvts92">"language"</span></p>
+</td>
+<td width="70%" valign="middle" style="padding: 1px;"><p class="rvps2"><span class="rvts40">an R language construct</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="20%" valign="middle" style="padding: 1px;"><p class="rvps2"><span class="rvts92">"special"</span></p>
+</td>
+<td width="70%" valign="middle" style="padding: 1px;"><p class="rvps2"><span class="rvts40">an internal function that does not evaluate its arguments</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="20%" valign="middle" style="padding: 1px;"><p class="rvps2"><span class="rvts92">"builtin"</span></p>
+</td>
+<td width="70%" valign="middle" style="padding: 1px;"><p class="rvps2"><span class="rvts40">an internal function that evaluates its arguments</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="20%" valign="middle" style="padding: 1px;"><p class="rvps2"><span class="rvts92">"char"</span></p>
+</td>
+<td width="70%" valign="middle" style="padding: 1px;"><p class="rvps2"><span class="rvts40">a ‘scalar’ string object (internal only) ***</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="20%" valign="middle" style="padding: 1px;"><p class="rvps2"><span class="rvts92">"logical"</span></p>
+</td>
+<td width="70%" valign="middle" style="padding: 1px;"><p class="rvps2"><span class="rvts40">a vector containing logical values</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="20%" valign="middle" style="padding: 1px;"><p class="rvps2"><span class="rvts92">"integer"</span></p>
+</td>
+<td width="70%" valign="middle" style="padding: 1px;"><p class="rvps2"><span class="rvts40">a vector containing integer values</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="20%" valign="middle" style="padding: 1px;"><p class="rvps2"><span class="rvts92">"double"</span></p>
+</td>
+<td width="70%" valign="middle" style="padding: 1px;"><p class="rvps2"><span class="rvts40">a vector containing real values</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="20%" valign="middle" style="padding: 1px;"><p class="rvps2"><span class="rvts92">"complex"</span></p>
+</td>
+<td width="70%" valign="middle" style="padding: 1px;"><p class="rvps2"><span class="rvts40">a vector containing complex values</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="20%" valign="middle" style="padding: 1px;"><p class="rvps2"><span class="rvts92">"character"</span></p>
+</td>
+<td width="70%" valign="middle" style="padding: 1px;"><p class="rvps2"><span class="rvts40">a vector containing character values</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="20%" valign="middle" style="padding: 1px;"><p class="rvps2"><span class="rvts92">"..."</span></p>
+</td>
+<td width="70%" valign="middle" style="padding: 1px;"><p class="rvps2"><span class="rvts40">the special variable length argument ***</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="20%" valign="middle" style="padding: 1px;"><p class="rvps2"><span class="rvts92">"any"</span></p>
+</td>
+<td width="70%" valign="middle" style="padding: 1px;"><p class="rvps2"><span class="rvts40">a special type that matches all types: there are no objects of this type</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="20%" valign="middle" style="padding: 1px;"><p class="rvps2"><span class="rvts92">"expression"</span></p>
+</td>
+<td width="70%" valign="middle" style="padding: 1px;"><p class="rvps2"><span class="rvts40">an expression object</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="20%" valign="middle" style="padding: 1px;"><p class="rvps2"><span class="rvts92">"list"</span></p>
+</td>
+<td width="70%" valign="middle" style="padding: 1px;"><p class="rvps2"><span class="rvts40">a list</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="20%" valign="middle" style="padding: 1px;"><p class="rvps2"><span class="rvts92">"bytecode"</span></p>
+</td>
+<td width="70%" valign="middle" style="padding: 1px;"><p class="rvps2"><span class="rvts40">byte code (internal only) ***</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="20%" valign="middle" style="padding: 1px;"><p class="rvps2"><span class="rvts92">"externalptr"</span></p>
+</td>
+<td width="70%" valign="middle" style="padding: 1px;"><p class="rvps2"><span class="rvts40">an external pointer object</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="20%" valign="middle" style="padding: 1px;"><p class="rvps2"><span class="rvts92">"weakref"</span></p>
+</td>
+<td width="70%" valign="middle" style="padding: 1px;"><p class="rvps2"><span class="rvts40">a weak reference object</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="20%" valign="middle" style="padding: 1px;"><p class="rvps2"><span class="rvts92">"raw"</span></p>
+</td>
+<td width="70%" valign="middle" style="padding: 1px;"><p class="rvps2"><span class="rvts40">a vector containing bytes</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="20%" valign="middle" style="padding: 1px;"><p class="rvps2"><span class="rvts92">"S4"</span></p>
+</td>
+<td width="70%" valign="middle" style="padding: 1px;"><p class="rvps2"><span class="rvts40">an S4 object which is not a simple object</span></p>
+<p class="rvps2"><span class="rvts40"><br/></span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="rvps2"><span class="rvts27">The above list is all the possible responses from the function typeof(). ie all the things that have a type. So here type and object are referring to the same set in that every object has a type and for every type there is a kind of object.</span></p>
+<p class="rvps2"><span class="rvts27"><br/></span></p>
+<p class="rvps2"><span class="rvts27">Here we have an attempt to clarify this:</span></p>
+<p class="rvps2"><a class="rvts31" href="http://dbarneche.github.io/2014-12-11-ufsc/lessons/01-intro_r/data-structures.html">http://dbarneche.github.io/2014-12-11-ufsc/lessons/01-intro_r/data-structures.html</a></p>
+<p class="rvps19"><span class="rvts92">R</span><span class="rvts40">&nbsp;has 5 basic atomic classes</span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: disc;">
+<li class="rvps2"><span class="rvts40">logical (e.g.,&nbsp;</span><span class="rvts92">TRUE</span><span class="rvts40">,&nbsp;</span><span class="rvts92">FALSE</span><span class="rvts40">)</span></li>
+<li class="rvps2"><span class="rvts40">integer (e.g,, 2L, as.integer(3))</span></li>
+<li class="rvps2"><span class="rvts40">numeric (real or decimal) (e.g, 2, 2.0, pi)</span></li>
+<li class="rvps2"><span class="rvts40">complex (e.g, 1 + 0i, 1 + 4i)</span></li>
+<li class="rvps2"><span class="rvts40">character (e.g, "a", "swc")</span></li>
+</ul>
+<p class="rvps2"><span class="rvts40"><br/></span></p>
+<p class="rvps2"><span class="rvts86">This introduces another similar concepts, classes. But classes are not = objects, they are </span><span class="rvts88">represented</span><span class="rvts86"> as objects.</span></p>
+<p class="rvps2"><span class="rvts86"><br/></span></p>
+<p class="rvps2"><a class="rvts105" href="https://stackoverflow.com/questions/8855589/a-comprehensive-survey-of-the-types-of-things-in-r-mode-and-class-and-type">https://stackoverflow.com/questions/8855589/a-comprehensive-survey-of-the-types-of-things-in-r-mode-and-class-and-type</a></p>
+<p class="rvps2"><span class="rvts86"><br/></span></p>
+<p class="rvps14"><span class="rvts136">types &lt;- list(</span><br/><span class="rvts136"> &nbsp;</span><span class="rvts137">"logical vector"</span><span class="rvts136"> = logical(),</span><br/><span class="rvts136"> &nbsp;</span><span class="rvts137">"integer vector"</span><span class="rvts136"> = integer(),</span><br/><span class="rvts136"> &nbsp;</span><span class="rvts137">"numeric vector"</span><span class="rvts136"> = numeric(),</span><br/><span class="rvts136"> &nbsp;</span><span class="rvts137">"complex vector"</span><span class="rvts136"> = complex(),</span><br/><span class="rvts136"> &nbsp;</span><span class="rvts137">"character vector"</span><span class="rvts136"> = character(),</span><br/><span class="rvts136"> &nbsp;</span><span class="rvts137">"raw vector"</span><span class="rvts136"> = raw(),</span><br/><span class="rvts136"> &nbsp;factor = factor(),</span><br/><span class="rvts136"> &nbsp;</span><span class="rvts137">"logical matrix"</span><span class="rvts136"> = matrix(logical()),</span><br/><span class="rvts136"> &nbsp;</span><span class="rvts137">"numeric matrix"</span><span class="rvts136"> = matrix(numeric()),</span><br/><span class="rvts136"> &nbsp;</span><span class="rvts137">"logical array"</span><span class="rvts136"> = array(logical(</span><span class="rvts137">8</span><span class="rvts136">), c(</span><span class="rvts137">2</span><span class="rvts136">, </span><span class="rvts137">2</span><span class="rvts136">, </span><span class="rvts137">2</span><span class="rvts136">)),</span><br/><span class="rvts136"> &nbsp;</span><span class="rvts137">"numeric array"</span><span class="rvts136"> = array(numeric(</span><span class="rvts137">8</span><span class="rvts136">), c(</span><span class="rvts137">2</span><span class="rvts136">, </span><span class="rvts137">2</span><span class="rvts136">, </span><span class="rvts137">2</span><span class="rvts136">)),</span><br/><span class="rvts136"> &nbsp;list = list(),</span><br/><span class="rvts136"> &nbsp;pairlist = .Options,</span><br/><span class="rvts136"> &nbsp;</span><span class="rvts137">"data frame"</span><span class="rvts136"> = data.frame(),</span><br/><span class="rvts136"> &nbsp;</span><span class="rvts137">"closure function"</span><span class="rvts136"> = identity,</span><br/><span class="rvts136"> &nbsp;</span><span class="rvts137">"primitive function"</span><span class="rvts136"> = </span><span class="rvts137">`+`</span><span class="rvts136">,</span><br/><span class="rvts136"> &nbsp;</span><span class="rvts137">"special function"</span><span class="rvts136"> = </span><span class="rvts137">`if`</span><span class="rvts136">,</span><br/><span class="rvts136"> &nbsp;environment = new.env(),</span><br/><span class="rvts136"> &nbsp;null = </span><span class="rvts137">NULL</span><span class="rvts136">,</span><br/><span class="rvts136"> &nbsp;formula = y ~ x,</span><br/><span class="rvts136"> &nbsp;expression = expression(),</span><br/><span class="rvts136"> &nbsp;call = call(</span><span class="rvts137">"identity"</span><span class="rvts136">),</span><br/><span class="rvts136"> &nbsp;name = as.name(</span><span class="rvts137">"x"</span><span class="rvts136">),</span><br/><span class="rvts136"> &nbsp;</span><span class="rvts137">"paren in expression"</span><span class="rvts136"> = expression((</span><span class="rvts137">1</span><span class="rvts136">))[[</span><span class="rvts137">1</span><span class="rvts136">]],</span><br/><span class="rvts136"> &nbsp;</span><span class="rvts137">"brace in expression"</span><span class="rvts136"> = expression({</span><span class="rvts137">1</span><span class="rvts136">})[[</span><span class="rvts137">1</span><span class="rvts136">]],</span><br/><span class="rvts136"> &nbsp;</span><span class="rvts137">"S3 lm object"</span><span class="rvts136"> = lm(dist ~ speed, cars),</span><br/><span class="rvts136"> &nbsp;</span><span class="rvts137">"S4 dummy object"</span><span class="rvts136"> = new(</span><span class="rvts137">"dummy"</span><span class="rvts136">, x = </span><span class="rvts137">1</span><span class="rvts136">:</span><span class="rvts137">10</span><span class="rvts136">, y = rnorm(</span><span class="rvts137">10</span><span class="rvts136">)),</span><br/><span class="rvts136"> &nbsp;</span><span class="rvts137">"external pointer"</span><span class="rvts136"> = read_xml(</span><span class="rvts137">"&lt;foo&gt;&lt;bar /&gt;&lt;/foo&gt;"</span><span class="rvts136">)$node</span><br/><span class="rvts136">)</span><br/><span class="rvts136">type_info &lt;- Map(</span><br/><span class="rvts136"> &nbsp;</span><span class="rvts138">function</span><span class="rvts136">(x, nm)</span><br/><span class="rvts136"> &nbsp;{</span><br/><span class="rvts136"> &nbsp; &nbsp;data_frame(</span><br/><span class="rvts136"> &nbsp; &nbsp; &nbsp;</span><span class="rvts137">"spoken type"</span><span class="rvts136"> = nm,</span><br/><span class="rvts136"> &nbsp; &nbsp; &nbsp;class = class(x), </span><br/><span class="rvts136"> &nbsp; &nbsp; &nbsp;mode &nbsp;= mode(x),</span><br/><span class="rvts136"> &nbsp; &nbsp; &nbsp;typeof = typeof(x),</span><br/><span class="rvts136"> &nbsp; &nbsp; &nbsp;storage.mode = storage.mode(x)</span><br/><span class="rvts136"> &nbsp; &nbsp;)</span><br/><span class="rvts136"> &nbsp;},</span><br/><span class="rvts136"> &nbsp;types,</span><br/><span class="rvts136"> &nbsp;names(types)</span><br/><span class="rvts136">) %&gt;% bind_rows</span><br/><span class="rvts136">knitr::kable(type_info)</span></p>
+<p class="rvps14"><span class="rvts136">|spoken type &nbsp; &nbsp; &nbsp; &nbsp; |class &nbsp; &nbsp; &nbsp; |mode &nbsp; &nbsp; &nbsp; &nbsp;|typeof &nbsp; &nbsp; &nbsp;|storage.mode |</span><br/><span class="rvts136">|:-------------------|:-----------|:-----------|:-----------|:------------|</span><br/><span class="rvts136">|logical vector &nbsp; &nbsp; &nbsp;|logical &nbsp; &nbsp; |logical &nbsp; &nbsp; |logical &nbsp; &nbsp; |logical &nbsp; &nbsp; &nbsp;|</span><br/><span class="rvts136">|integer vector &nbsp; &nbsp; &nbsp;|integer &nbsp; &nbsp; |numeric &nbsp; &nbsp; |integer &nbsp; &nbsp; |integer &nbsp; &nbsp; &nbsp;|</span><br/><span class="rvts136">|numeric vector &nbsp; &nbsp; &nbsp;|numeric &nbsp; &nbsp; |numeric &nbsp; &nbsp; |double &nbsp; &nbsp; &nbsp;|double &nbsp; &nbsp; &nbsp; |</span><br/><span class="rvts136">|complex vector &nbsp; &nbsp; &nbsp;|complex &nbsp; &nbsp; |complex &nbsp; &nbsp; |complex &nbsp; &nbsp; |complex &nbsp; &nbsp; &nbsp;|</span><br/><span class="rvts136">|character vector &nbsp; &nbsp;|character &nbsp; |character &nbsp; |character &nbsp; |character &nbsp; &nbsp;|</span><br/><span class="rvts136">|raw vector &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;|raw &nbsp; &nbsp; &nbsp; &nbsp; |raw &nbsp; &nbsp; &nbsp; &nbsp; |raw &nbsp; &nbsp; &nbsp; &nbsp; |raw &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;|</span><br/><span class="rvts136">|factor &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;|factor &nbsp; &nbsp; &nbsp;|numeric &nbsp; &nbsp; |integer &nbsp; &nbsp; |integer &nbsp; &nbsp; &nbsp;|</span><br/><span class="rvts136">|logical matrix &nbsp; &nbsp; &nbsp;|matrix &nbsp; &nbsp; &nbsp;|logical &nbsp; &nbsp; |logical &nbsp; &nbsp; |logical &nbsp; &nbsp; &nbsp;|</span><br/><span class="rvts136">|numeric matrix &nbsp; &nbsp; &nbsp;|matrix &nbsp; &nbsp; &nbsp;|numeric &nbsp; &nbsp; |double &nbsp; &nbsp; &nbsp;|double &nbsp; &nbsp; &nbsp; |</span><br/><span class="rvts136">|logical array &nbsp; &nbsp; &nbsp; |array &nbsp; &nbsp; &nbsp; |logical &nbsp; &nbsp; |logical &nbsp; &nbsp; |logical &nbsp; &nbsp; &nbsp;|</span><br/><span class="rvts136">|numeric array &nbsp; &nbsp; &nbsp; |array &nbsp; &nbsp; &nbsp; |numeric &nbsp; &nbsp; |double &nbsp; &nbsp; &nbsp;|double &nbsp; &nbsp; &nbsp; |</span><br/><span class="rvts136">|list &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;|list &nbsp; &nbsp; &nbsp; &nbsp;|list &nbsp; &nbsp; &nbsp; &nbsp;|list &nbsp; &nbsp; &nbsp; &nbsp;|list &nbsp; &nbsp; &nbsp; &nbsp; |</span><br/><span class="rvts136">|pairlist &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;|pairlist &nbsp; &nbsp;|pairlist &nbsp; &nbsp;|pairlist &nbsp; &nbsp;|pairlist &nbsp; &nbsp; |</span><br/><span class="rvts136">|data frame &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;|data.frame &nbsp;|list &nbsp; &nbsp; &nbsp; &nbsp;|list &nbsp; &nbsp; &nbsp; &nbsp;|list &nbsp; &nbsp; &nbsp; &nbsp; |</span><br/><span class="rvts136">|closure </span><span class="rvts138">function</span><span class="rvts136"> &nbsp; &nbsp;|</span><span class="rvts138">function</span><span class="rvts136"> &nbsp; &nbsp;|</span><span class="rvts138">function</span><span class="rvts136"> &nbsp; &nbsp;|closure &nbsp; &nbsp; |</span><span class="rvts138">function</span><span class="rvts136"> &nbsp; &nbsp; |</span><br/><span class="rvts136">|primitive </span><span class="rvts138">function</span><span class="rvts136"> &nbsp;|</span><span class="rvts138">function</span><span class="rvts136"> &nbsp; &nbsp;|</span><span class="rvts138">function</span><span class="rvts136"> &nbsp; &nbsp;|builtin &nbsp; &nbsp; |</span><span class="rvts138">function</span><span class="rvts136"> &nbsp; &nbsp; |</span><br/><span class="rvts136">|special </span><span class="rvts138">function</span><span class="rvts136"> &nbsp; &nbsp;|</span><span class="rvts138">function</span><span class="rvts136"> &nbsp; &nbsp;|</span><span class="rvts138">function</span><span class="rvts136"> &nbsp; &nbsp;|special &nbsp; &nbsp; |</span><span class="rvts138">function</span><span class="rvts136"> &nbsp; &nbsp; |</span><br/><span class="rvts136">|environment &nbsp; &nbsp; &nbsp; &nbsp; |environment |environment |environment |environment &nbsp;|</span><br/><span class="rvts136">|null &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;|</span><span class="rvts137">NULL</span><span class="rvts136"> &nbsp; &nbsp; &nbsp; &nbsp;|</span><span class="rvts137">NULL</span><span class="rvts136"> &nbsp; &nbsp; &nbsp; &nbsp;|</span><span class="rvts137">NULL</span><span class="rvts136"> &nbsp; &nbsp; &nbsp; &nbsp;|</span><span class="rvts137">NULL</span><span class="rvts136"> &nbsp; &nbsp; &nbsp; &nbsp; |</span><br/><span class="rvts136">|formula &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; |formula &nbsp; &nbsp; |call &nbsp; &nbsp; &nbsp; &nbsp;|language &nbsp; &nbsp;|language &nbsp; &nbsp; |</span><br/><span class="rvts136">|expression &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;|expression &nbsp;|expression &nbsp;|expression &nbsp;|expression &nbsp; |</span><br/><span class="rvts136">|call &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;|call &nbsp; &nbsp; &nbsp; &nbsp;|call &nbsp; &nbsp; &nbsp; &nbsp;|language &nbsp; &nbsp;|language &nbsp; &nbsp; |</span><br/><span class="rvts136">|name &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;|name &nbsp; &nbsp; &nbsp; &nbsp;|name &nbsp; &nbsp; &nbsp; &nbsp;|symbol &nbsp; &nbsp; &nbsp;|symbol &nbsp; &nbsp; &nbsp; |</span><br/><span class="rvts136">|paren </span><span class="rvts138">in</span><span class="rvts136"> expression |( &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; |( &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; |language &nbsp; &nbsp;|language &nbsp; &nbsp; |</span><br/><span class="rvts136">|brace </span><span class="rvts138">in</span><span class="rvts136"> expression |{ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; |call &nbsp; &nbsp; &nbsp; &nbsp;|language &nbsp; &nbsp;|language &nbsp; &nbsp; |</span><br/><span class="rvts136">|S3 lm object &nbsp; &nbsp; &nbsp; &nbsp;|lm &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;|list &nbsp; &nbsp; &nbsp; &nbsp;|list &nbsp; &nbsp; &nbsp; &nbsp;|list &nbsp; &nbsp; &nbsp; &nbsp; |</span><br/><span class="rvts136">|S4 dummy object &nbsp; &nbsp; |dummy &nbsp; &nbsp; &nbsp; |S4 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;|S4 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;|S4 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; |</span><br/><span class="rvts136">|external pointer &nbsp; &nbsp;|externalptr |externalptr |externalptr |externalptr &nbsp;|</span></p>
+<p class="rvps14"><a class="rvts140" href="https://stackoverflow.com/questions/8855589/a-comprehensive-survey-of-the-types-of-things-in-r-mode-and-class-and-type">https://stackoverflow.com/questions/8855589/a-comprehensive-survey-of-the-types-of-things-in-r-mode-and-class-and-type</a></p>
+<p class="rvps47"><span class="rvts139">typeof</span><span class="rvts79">&nbsp;gives the internal type of an object. Possible values according to&nbsp;</span><span class="rvts139">?typeof</span><span class="rvts79">&nbsp;are:</span></p>
+<p class="rvps48"><span class="rvts79">The vector types "logical", "integer", "double", "complex", "character", "raw" and "list", "NULL", "closure" (function), "special" and "builtin" (basic functions and operators), "environment", "S4" (some S4 objects) and others that are unlikely to be seen at user level ("symbol", "pairlist", "promise", "language", "char", "...", "any", "expression", "externalptr", "bytecode" and "weakref").</span></p>
+<p class="rvps47"><span class="rvts139">mode</span><span class="rvts79">&nbsp;relies on typeof. From&nbsp;</span><span class="rvts139">?mode</span><span class="rvts79">:</span></p>
+<p class="rvps48"><span class="rvts79">Modes have the same set of names as types (see typeof) except that types "integer" and "double" are returned as "numeric". types "special" and "builtin" are returned as "function". type "symbol" is called mode "name". type "language" is returned as "(" or "call".</span></p>
+<p class="rvps14"><span class="rvts136"><br/></span></p>
+<p class="rvps14"><span class="rvts136"><br/></span></p>
+<p class="rvps14"><span class="rvts136"><br/></span></p>
+<p class="rvps14"><span class="rvts136"><br/></span></p>
+<p class="rvps14"><span class="rvts136"><br/></span></p>
+<p class="rvps14"><span class="rvts136"><br/></span></p>
+<p></p>
+<p class="rvps4" style="clear: both;"><span class="rvts18">Created with the Personal Edition of HelpNDoc: </span><a class="rvts19" href="https://www.helpndoc.com/help-authoring-tool">Easy to use tool to create HTML Help files and Help web sites</a></p>
+
+            </div>
+            
+            <div id="topic_footer"><div id="topic_footer_content">Copyright &copy; &lt;Dates&gt; by &lt;Authors&gt;. All Rights Reserved.</div></div>
+        </div>  <!-- /#topic-content -->
+    </article>
+
+    <footer></footer>
+
+  </div>  <!-- /#main -->
+
+  <div class="mask" data-toggle="sm-nav-expanded"></div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="hndModal" tabindex="-1" role="dialog" aria-labelledby="hndModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="hndModalLabel"></h4>
+        </div>
+        <div class="modal-body">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary modal-btn-close" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="vendors/jquery-1.11.3/jquery.min.js"></script>
+  <script src="vendors/bootstrap-3.3.6/js/bootstrap.min.js"></script>
+  <script src="vendors/fastclick-1.0.6/fastclick.min.js"></script>
+  <script src="vendors/markjs-8.8.3/jquery.mark.min.js"></script>
+  <script src="vendors/uri-1.18.9/uri.min.js"></script>
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <script src="vendors/bootstrap-3.3.6/js/ie10-viewport-bug-workaround.js"></script>
+  
+  <!-- Headroom -->
+  <script src="vendors/headroom-0.9.3/headroom.min.js"></script>
+  <script src="vendors/headroom-0.9.3/jquery.headroom.min.js"></script>
+
+  <!-- JsTree -->
+  <script src="vendors/jstree-3.3.2/jstree.min.js"></script>
+
+  <!-- HelpNDoc scripts -->
+  <script src="_translations.js"></script>
+  <script src="js/hndsd.min.js"></script>
+  <script src="js/hndse.min.js"></script>
+  <script src="js/app.min.js"></script>
+
+  <!-- Scripts -->
+  <script>
+    $(function() {
+      // Instanciate FastClick
+      Origami.fastclick(document.body);
+      // Create the app
+      var app = new Hnd.App();
+      // Update translations
+      hnd_ut(app);
+	  // Custom JS
+	  
+      // Boot the app
+      app.Boot();
+    });
+  </script>
+
+
+
+</body>
+
+</html>
+

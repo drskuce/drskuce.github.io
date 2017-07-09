@@ -1,0 +1,661 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="generator" content="HelpNDoc Personal Edition 5.2.0.265">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="favicon.ico"/>
+
+  <title>Objects</title>
+  <meta name="description" content="tyetyurtyurtyurtyurtyurtyurtu" /> 
+  <meta name="keywords" content="">
+
+
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Objects">
+  <meta name="twitter:description" content="tyetyurtyurtyurtyurtyurtyurtu">
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="Objects" />
+  <meta property="og:type" content="article" />
+  <meta property="og:description" content="tyetyurtyurtyurtyurtyurtyurtu" />
+  <meta property="og:site_name" content="R Knowledge Base" /> 
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendors/bootstrap-3.3.6/css/bootstrap.min.css" rel="stylesheet"/>
+
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <link href="vendors/bootstrap-3.3.6/css/ie10-viewport-bug-workaround.css" rel="stylesheet"/>
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+      <script src="vendors/html5shiv-3.7.2/html5shiv.min.js"></script>
+      <script src="vendors/respond-1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  <!-- JsTree styles -->
+  <link href="vendors/jstree-3.3.2/themes/default/style.min.css" rel="stylesheet"/>
+
+  <!-- Hnd styles -->
+  <link href="css/layout.min.css" rel="stylesheet" />
+  <link href="css/effects.min.css" rel="stylesheet" />
+  <link href="css/theme-light-blue.min.css" rel="stylesheet" />
+  <link href="css/print.min.css" rel="stylesheet" media="print" />
+  <style type="text/css">nav { width: 350px} @media screen and (min-width:769px) { body.md-nav-expanded #main { margin-left: 350px} body.md-nav-expanded header { padding-left: 364px} }</style>
+
+  <!-- Content style -->
+  <link href="css/hnd.content.css" rel="stylesheet" />
+
+  
+
+
+
+</head>
+
+<body class="md-nav-expanded">
+
+
+
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible">Skip to main content</a>
+  </div>
+
+  <header class="headroom">
+    <button class="hnd-toggle btn btn-default">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>        
+    </button>
+    <h1>R Knowledge Base</h1>
+    
+  </header>
+
+  <nav class="md-nav-expanded">
+    <!-- Nav tabs -->
+    <ul class="tab-tabs nav nav-tabs" role="tablist">
+      <li id="nav-close"> 
+        <button class="hnd-toggle btn btn-default">
+          <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+        </button>
+      </li>
+      
+	  
+        <li role="presentation" class="tab active">
+            <a href="#contents" aria-controls="contents" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-list"></i>
+                Contents
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#index" aria-controls="index" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-asterisk"></i>
+                Index
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#search" aria-controls="search" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-search"></i>
+                Search
+            </a>
+        </li>
+      
+    </ul>  <!-- /Nav tabs -->
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+	  
+      <div role="tabpanel" class="tab-pane active" id="contents">
+        <div id="toc" class="tree-container unselectable"
+            data-url="_toc.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /contents-->
+      
+      <div role="tabpanel" class="tab-pane" id="index">
+        <div id="keywords" class="tree-container unselectable"
+            data-url="_keywords.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /index-->
+      
+      <div role="tabpanel" class="tab-pane" id="search">
+        <div class="search-content">
+          <div class="search-input">
+            <form id="search-form">
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="input-search" name="input-search" placeholder="Search..." />
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit">
+                      <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </form>
+          </div>  <!-- /search-input -->
+          <div class="search-result">
+            <div id="search-info"></div>
+            <div class="tree-container unselectable" id="search-tree"></div>
+          </div>  <!-- /search-result -->
+        </div>  <!-- /search-content -->
+      </div>  <!-- /search-->
+      
+    </div>  <!-- /Tab panes -->
+
+  </nav>
+
+  <div id="main">
+
+    <article>
+        <div id="topic-content" class="container-fluid" 
+		  data-hnd-id="Objects"
+		  data-hnd-context="3"
+		  data-hnd-title="Objects"
+		>
+            
+                <div class="navigation">
+                    <ol class="breadcrumb">
+                        <li><a href="RConcepts.html">R Concepts</a></li>
+                    </ol>
+                    <div class="nav-arrows">
+                        <div class="btn-group btn-group-xs" role="group"><a class="btn btn-default" href="RConcepts.html" title="R Concepts" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a><a class="btn btn-default" href="KindsofData.html" title="Kinds of Data" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="Vectors.html" title="Vectors" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
+                    </div>
+                </div> 
+            
+
+            <a id="main-content"></a>
+
+            <h2>Objects</h2>
+
+            <div class="main-content">
+                
+<p></p>
+<h1 class="rvps16"><span class="rvts0"><span class="rvts29"><br/></span></span></h1>
+<h1 class="rvps15"><span class="rvts0"><span class="rvts27">All computer languages have a variety of ways of representing data. Usually, these are called </span></span><span class="rvts0"><span class="rvts28">data types</span></span><span class="rvts0"><span class="rvts27">. These are either </span></span><span class="rvts0"><span class="rvts28">atomic</span></span><span class="rvts0"><span class="rvts27"> also called </span></span><span class="rvts0"><span class="rvts28">scalar</span></span><span class="rvts0"><span class="rvts27"> (no structure) such as numbers, text, and booleans, or </span></span><span class="rvts0"><span class="rvts28">structures</span></span><span class="rvts0"><span class="rvts27">, such as </span></span><span class="rvts0"><span class="rvts28">arrays, lists,</span></span><span class="rvts0"><span class="rvts27"> etc</span></span></h1>
+<h1 class="rvps15"><span class="rvts0"><span class="rvts27"><br/></span></span></h1>
+<h1 class="rvps15"><span class="rvts0"><span class="rvts27">See also &nbsp;</span></span><span class="rvts0"><a class="rvts31" href="KindsofData.html">Kinds of Data</a></span></h1>
+<p class="rvps2"><span class="rvts27"><br/></span></p>
+<p class="rvps2"><span class="rvts27">R has a rich variety of ways of representing data, some acting as a conventional data type (ie the three common basic types, numbers, text, and booleans). </span></p>
+<p class="rvps2"><span class="rvts27"><br/></span></p>
+<p class="rvps2"><span class="rvts27">See also </span><a class="rvts31" href="Types.html">Types</a></p>
+<p class="rvps2"><span class="rvts27"><br/></span></p>
+<p class="rvps2"><span class="rvts27">R’s type system can be very confusing to the beginner, particularly if they have experience with other languages. Also contributing to the problem is that the documentation is both not precise and consistent in its terminology, and certain critical distinctions are not made clear. &nbsp;We shall try to somewhat alleviate this problem, though doubtless many may not agree with our attempt. It would be a gargantuan effort.</span></p>
+<p class="rvps2"><span class="rvts27"><br/></span></p>
+<p class="rvps2"><span class="rvts27">R has 24 types of objects, of which only the </span><span class="rvts28">vectors</span><span class="rvts27"> are what we would usually think of as data. Vectors represent the vast majority of data and have two basic </span><a class="rvts31" href="Attributes.html">Attributes</a><span class="rvts27">: &nbsp;the type of data they contain, and the number of </span><span class="rvts28">dimensions</span><span class="rvts27">, since all vectors have at least one dimension. There is no notion of </span><span class="rvts28">scalar</span><span class="rvts27"> types (ie types with no structure) found in all other languages. So &nbsp;what would be considered a scalar in other languages, eg a single number like 1, or a single character string, is stored as a vector of length 1. Vectors are created with the function c(). Hence 1 is actually c(1); there is no way to get 1 "by itself". Since addition can act on vectors, 1+1 is c(1)+c(1)=c(2).</span></p>
+<p class="rvps2"><span class="rvts27"> </span></p>
+<p class="rvps2"><span class="rvts27">There are five (or six, depending on where you look!) types of vector: integer, double, complex, character, and logical. and maybe raw. &nbsp;There are 19 other types.</span></p>
+<p class="rvps2"><span class="rvts27"><br/></span></p>
+<p class="rvps2"><span class="rvts25"><br/></span></p>
+<div class="rvps2"><table border="1" cellpadding="0" cellspacing="-1" style="border-width: 0px; background-color: #ffffff; border-collapse: collapse;">
+<tr valign="top">
+<td width="78" valign="middle" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px; background-color: #c0c0c0;"><p class="rvps2"><span class="rvts25">!object</span></p>
+</td>
+<td width="109" valign="middle" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px; background-color: #c0c0c0;"><p class="rvps2"><span class="rvts25">has</span></p>
+</td>
+<td width="112" valign="middle" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px; background-color: #c0c0c0;"><p class="rvps2"><span class="rvts25">1 type</span></p>
+</td>
+<td width="250" valign="middle" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px; background-color: #c0c0c0;"><p class="rvps2"><span class="rvts25">one of: NULL, symbol, logical, integer,double, expression, list,etc???</span></p>
+</td>
+<td width="83" valign="middle" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px; background-color: #c0c0c0;"><p class="rvps2"><span class="rvts25"><br/></span></p>
+</td>
+<td width="65" valign="middle" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px; background-color: #c0c0c0;"><p class="rvps2"><span class="rvts25"><br/></span></p>
+</td>
+<td width="1" valign="middle" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px; background-color: #c0c0c0;"><p class="rvps2"><span class="rvts25"><br/></span></p>
+</td>
+<td width="47" valign="middle" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px; background-color: #c0c0c0;"><p class="rvps2"><span class="rvts25"><br/></span></p>
+</td>
+<td width="53" valign="middle" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px; background-color: #c0c0c0;"><p class="rvps2"><span class="rvts25"><br/></span></p>
+</td>
+<td width="64" valign="middle" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px; background-color: #c0c0c0;"><p class="rvps2"><span class="rvts25"><br/></span></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="78" valign="middle" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px; background-color: #c0c0c0;"><p class="rvps2"><span class="rvts25">type of an object</span></p>
+</td>
+<td width="109" valign="middle" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px; background-color: #c0c0c0;"><p class="rvps2"><span class="rvts25">is returned by </span></p>
+</td>
+<td width="112" valign="middle" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px; background-color: #c0c0c0;"><p class="rvps2"><span class="rvts25">typeof /P</span></p>
+</td>
+<td width="250" valign="middle" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px; background-color: #c0c0c0;"><p class="rvps2"><span class="rvts25"><br/></span></p>
+</td>
+<td width="83" valign="middle" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px; background-color: #c0c0c0;"><p class="rvps2"><span class="rvts25"><br/></span></p>
+</td>
+<td width="65" valign="middle" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px; background-color: #c0c0c0;"><p class="rvps2"><span class="rvts25"><br/></span></p>
+</td>
+<td width="1" valign="middle" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px; background-color: #c0c0c0;"><p class="rvps2"><span class="rvts25"><br/></span></p>
+</td>
+<td width="47" valign="middle" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px; background-color: #c0c0c0;"><p class="rvps2"><span class="rvts25"><br/></span></p>
+</td>
+<td width="53" valign="middle" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px; background-color: #c0c0c0;"><p class="rvps2"><span class="rvts25"><br/></span></p>
+</td>
+<td width="64" valign="middle" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px; background-color: #c0c0c0;"><p class="rvps2"><span class="rvts25"><br/></span></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="78" valign="middle" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px; background-color: #c0c0c0;"><p class="rvps2"><span class="rvts25">symbol</span></p>
+</td>
+<td width="109" valign="middle" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px; background-color: #c0c0c0;"><p class="rvps2"><span class="rvts25">synonym</span></p>
+</td>
+<td width="112" valign="middle" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px; background-color: #c0c0c0;"><p class="rvps2"><span class="rvts25">variable</span></p>
+</td>
+<td width="250" valign="middle" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px; background-color: #c0c0c0;"><p class="rvps2"><span class="rvts25"><br/></span></p>
+</td>
+<td width="83" valign="middle" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px; background-color: #c0c0c0;"><p class="rvps2"><span class="rvts25"><br/></span></p>
+</td>
+<td width="65" valign="middle" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px; background-color: #c0c0c0;"><p class="rvps2"><span class="rvts25"><br/></span></p>
+</td>
+<td width="1" valign="middle" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px; background-color: #c0c0c0;"><p class="rvps2"><span class="rvts25"><br/></span></p>
+</td>
+<td width="47" valign="middle" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px; background-color: #c0c0c0;"><p class="rvps2"><span class="rvts25"><br/></span></p>
+</td>
+<td width="53" valign="middle" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px; background-color: #c0c0c0;"><p class="rvps2"><span class="rvts25"><br/></span></p>
+</td>
+<td width="64" valign="middle" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px; background-color: #c0c0c0;"><p class="rvps2"><span class="rvts25"><br/></span></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="78" valign="middle" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px; background-color: #c0c0c0;"><p class="rvps2"><span class="rvts25"><br/></span></p>
+</td>
+<td width="109" valign="middle" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px; background-color: #c0c0c0;"><p class="rvps2"><span class="rvts25"><br/></span></p>
+</td>
+<td width="112" valign="middle" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px; background-color: #c0c0c0;"><p class="rvps2"><span class="rvts25"><br/></span></p>
+</td>
+<td width="250" valign="middle" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px; background-color: #c0c0c0;"><p class="rvps2"><span class="rvts25"><br/></span></p>
+</td>
+<td width="83" valign="middle" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px; background-color: #c0c0c0;"><p class="rvps2"><span class="rvts25"><br/></span></p>
+</td>
+<td width="65" valign="middle" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px; background-color: #c0c0c0;"><p class="rvps2"><span class="rvts25"><br/></span></p>
+</td>
+<td width="1" valign="middle" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px; background-color: #c0c0c0;"><p class="rvps2"><span class="rvts25"><br/></span></p>
+</td>
+<td width="47" valign="middle" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px; background-color: #c0c0c0;"><p class="rvps2"><span class="rvts25"><br/></span></p>
+</td>
+<td width="53" valign="middle" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px; background-color: #c0c0c0;"><p class="rvps2"><span class="rvts25"><br/></span></p>
+</td>
+<td width="64" valign="middle" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px; background-color: #c0c0c0;"><p class="rvps2"><span class="rvts25"><br/></span></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="78" valign="middle" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px; background-color: #c0c0c0;"><p class="rvps2"><span class="rvts25">#</span></p>
+</td>
+<td width="109" valign="middle" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px; background-color: #c0c0c0;"><p class="rvps2"><span class="rvts25">has</span></p>
+</td>
+<td width="112" valign="middle" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px; background-color: #c0c0c0;"><p class="rvps2"><span class="rvts25">1 mode </span></p>
+</td>
+<td width="250" valign="middle" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px; background-color: #c0c0c0;"><p class="rvps2"><span class="rvts25">one of: NULL, symbol, logical, integer,double, expression, list,etc???</span></p>
+</td>
+<td width="83" valign="middle" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px; background-color: #c0c0c0;"><p class="rvps2"><span class="rvts25"><br/></span></p>
+</td>
+<td width="65" valign="middle" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px; background-color: #c0c0c0;"><p class="rvps2"><span class="rvts25"><br/></span></p>
+</td>
+<td width="1" valign="middle" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px; background-color: #c0c0c0;"><p class="rvps2"><span class="rvts25"><br/></span></p>
+</td>
+<td width="47" valign="middle" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px; background-color: #c0c0c0;"><p class="rvps2"><span class="rvts25"><br/></span></p>
+</td>
+<td width="53" valign="middle" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px; background-color: #c0c0c0;"><p class="rvps2"><span class="rvts25"><br/></span></p>
+</td>
+<td width="64" valign="middle" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px; background-color: #c0c0c0;"><p class="rvps2"><span class="rvts25"><br/></span></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="78" valign="middle" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px; background-color: #c0c0c0;"><p class="rvps2"><span class="rvts25">#</span></p>
+</td>
+<td width="109" valign="middle" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px; background-color: #c0c0c0;"><p class="rvps2"><span class="rvts25">has</span></p>
+</td>
+<td width="112" valign="middle" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px; background-color: #c0c0c0;"><p class="rvps2"><span class="rvts25">0m attributes</span></p>
+</td>
+<td width="250" valign="middle" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px; background-color: #c0c0c0;"><p class="rvps2"><span class="rvts25"><br/></span></p>
+</td>
+<td width="83" valign="middle" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px; background-color: #c0c0c0;"><p class="rvps2"><span class="rvts25"><br/></span></p>
+</td>
+<td width="65" valign="middle" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px; background-color: #c0c0c0;"><p class="rvps2"><span class="rvts25">except: NULL does not</span></p>
+</td>
+<td width="1" valign="middle" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px; background-color: #c0c0c0;"><p class="rvps2"><span class="rvts25"><br/></span></p>
+</td>
+<td width="47" valign="middle" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px; background-color: #c0c0c0;"><p class="rvps2"><span class="rvts25"><br/></span></p>
+</td>
+<td width="53" valign="middle" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px; background-color: #c0c0c0;"><p class="rvps2"><span class="rvts25"><br/></span></p>
+</td>
+<td width="64" valign="middle" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px; background-color: #c0c0c0;"><p class="rvps2"><span class="rvts25"><br/></span></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="78" valign="middle" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px; background-color: #c0c0c0;"><p class="rvps2"><span class="rvts25">#</span></p>
+</td>
+<td width="109" valign="middle" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px; background-color: #c0c0c0;"><p class="rvps2"><span class="rvts25">has</span></p>
+</td>
+<td width="112" valign="middle" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px; background-color: #c0c0c0;"><p class="rvps2"><span class="rvts25">1storage mode</span></p>
+</td>
+<td width="250" valign="middle" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px; background-color: #c0c0c0;"><p class="rvps2"><span class="rvts25">one of: NULL, symbol, logical, integer,double, expression, list,etc???</span></p>
+</td>
+<td width="83" valign="middle" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px; background-color: #c0c0c0;"><p class="rvps2"><span class="rvts25"><br/></span></p>
+</td>
+<td width="65" valign="middle" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px; background-color: #c0c0c0;"><p class="rvps2"><span class="rvts25"><br/></span></p>
+</td>
+<td width="1" valign="middle" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px; background-color: #c0c0c0;"><p class="rvps2"><span class="rvts25"><br/></span></p>
+</td>
+<td width="47" valign="middle" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px; background-color: #c0c0c0;"><p class="rvps2"><span class="rvts25"><br/></span></p>
+</td>
+<td width="53" valign="middle" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px; background-color: #c0c0c0;"><p class="rvps2"><span class="rvts25"><br/></span></p>
+</td>
+<td width="64" valign="middle" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px; background-color: #c0c0c0;"><p class="rvps2"><span class="rvts25"><br/></span></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="78" valign="middle" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px; background-color: #c0c0c0;"><p class="rvps2"><span class="rvts25">typeof /P</span></p>
+</td>
+<td width="109" valign="middle" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px; background-color: #c0c0c0;"><p class="rvps2"><span class="rvts25">isa</span></p>
+</td>
+<td width="112" valign="middle" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px; background-color: #c0c0c0;"><p class="rvps2"><span class="rvts25">base function</span></p>
+</td>
+<td width="250" valign="middle" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px; background-color: #c0c0c0;"><p class="rvps2"><span class="rvts25"><br/></span></p>
+</td>
+<td width="83" valign="middle" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px; background-color: #c0c0c0;"><p class="rvps2"><span class="rvts25"><br/></span></p>
+</td>
+<td width="65" valign="middle" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px; background-color: #c0c0c0;"><p class="rvps2"><span class="rvts25"><br/></span></p>
+</td>
+<td width="1" valign="middle" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px; background-color: #c0c0c0;"><p class="rvps2"><span class="rvts25"><br/></span></p>
+</td>
+<td width="47" valign="middle" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px; background-color: #c0c0c0;"><p class="rvps2"><span class="rvts25"><br/></span></p>
+</td>
+<td width="53" valign="middle" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px; background-color: #c0c0c0;"><p class="rvps2"><span class="rvts25"><br/></span></p>
+</td>
+<td width="64" valign="middle" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px; background-color: #c0c0c0;"><p class="rvps2"><span class="rvts25"><br/></span></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="78" valign="middle" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px; background-color: #c0c0c0;"><p class="rvps2"><span class="rvts25"><br/></span></p>
+</td>
+<td width="109" valign="middle" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px; background-color: #c0c0c0;"><p class="rvps2"><span class="rvts25"><br/></span></p>
+</td>
+<td width="112" valign="middle" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px; background-color: #c0c0c0;"><p class="rvps2"><span class="rvts25"><br/></span></p>
+</td>
+<td width="250" valign="middle" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px; background-color: #c0c0c0;"><p class="rvps2"><span class="rvts25"><br/></span></p>
+</td>
+<td width="83" valign="middle" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px; background-color: #c0c0c0;"><p class="rvps2"><span class="rvts25"><br/></span></p>
+</td>
+<td width="65" valign="middle" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px; background-color: #c0c0c0;"><p class="rvps2"><span class="rvts25"><br/></span></p>
+</td>
+<td width="1" valign="middle" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px; background-color: #c0c0c0;"><p class="rvps2"><span class="rvts25"><br/></span></p>
+</td>
+<td width="47" valign="middle" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px; background-color: #c0c0c0;"><p class="rvps2"><span class="rvts25"><br/></span></p>
+</td>
+<td width="53" valign="middle" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px; background-color: #c0c0c0;"><p class="rvps2"><span class="rvts25"><br/></span></p>
+</td>
+<td width="64" valign="middle" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px; background-color: #c0c0c0;"><p class="rvps2"><span class="rvts25"><br/></span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<hr style="height: 1px; color : #000000;  background-color : #000000; border-width : 0px;">
+<hr style="height: 1px; color : #000000;  background-color : #000000; border-width : 0px;">
+<p class="rvps2"><a class="rvts30" href="https://cran.r-project.org/doc/manuals/r-release/R-lang.html#Vector-objects">https://cran.r-project.org/doc/manuals/r-release/R-lang.html#Vector-objects</a></p>
+<p class="rvps2"><span class="rvts25"><br/></span></p>
+<p class="rvps2"><span class="rvts25"><br/></span></p>
+<p class="rvps2"><span class="rvts25">In every computer language </span><a name="index-variable"></a>
+<span class="rvts25">variables provide a means of accessing the data stored in memory. R does not provide direct access to the computer’s memory but rather provides a number of specialized data structures we will refer to as </span><a name="index-object"></a>
+<span class="rvts25">objects. These objects are referred to through symbols or variables. In R, however, the symbols are themselves objects and can be manipulated in the same way as any other object. This is different from many other languages and has wide ranging effects.</span></p>
+<p class="rvps2"><span class="rvts25">In this chapter we provide preliminary descriptions of the various data structures provided in R. More detailed discussions of many of them will be found in the subsequent chapters. The R specific function typeof </span><a name="index-type"></a>
+<span class="rvts25">returns the </span><span class="rvts26">type</span><span class="rvts25"> of an R object. Note that in the C code underlying R, all objects are pointers to a structure with typedef SEXPREC; the different R data types are represented in C by SEXPTYPE, which determines how the information in the various parts of the structure is used.</span></p>
+<p class="rvps2"><span class="rvts25"><br/></span></p>
+<p class="rvps2"><span class="rvts25"><br/></span></p>
+<p class="rvps2"><span class="rvts25">The following table describes the possible values returned by typeof and what they are.</span></p>
+<p class="rvps2"><span class="rvts25"><br/></span></p>
+<div class="rvps2"><table border="0" cellpadding="0" cellspacing="0" style="border-width: 0px; border-spacing: 0px;">
+<tr valign="top">
+<td width="125" valign="middle" style="padding: 0px;"><p class="rvps2"><span class="rvts25">"NULL"</span></p>
+</td>
+<td width="437" valign="middle" style="padding: 0px;"><p class="rvps2"><span class="rvts25">NULL</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="125" valign="middle" style="padding: 0px;"><p class="rvps2"><span class="rvts25">"symbol"</span></p>
+</td>
+<td width="437" valign="middle" style="padding: 0px;"><p class="rvps2"><span class="rvts25">a variable name</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="125" valign="middle" style="padding: 0px;"><p class="rvps2"><span class="rvts25">"pairlist"</span></p>
+</td>
+<td width="437" valign="middle" style="padding: 0px;"><p class="rvps2"><span class="rvts25">a pairlist object (mainly internal)</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="125" valign="middle" style="padding: 0px;"><p class="rvps2"><span class="rvts25">"closure"</span></p>
+</td>
+<td width="437" valign="middle" style="padding: 0px;"><p class="rvps2"><span class="rvts25">a function</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="125" valign="middle" style="padding: 0px;"><p class="rvps2"><span class="rvts25">"environment"</span></p>
+</td>
+<td width="437" valign="middle" style="padding: 0px;"><p class="rvps2"><span class="rvts25">an environment</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="125" valign="middle" style="padding: 0px;"><p class="rvps2"><a name="index-evaluation_002c-lazy"></a>
+<span class="rvts25">"promise"</span></p>
+</td>
+<td width="437" valign="middle" style="padding: 0px;"><p class="rvps2"><span class="rvts25">an object used to implement lazy evaluation</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="125" valign="middle" style="padding: 0px;"><p class="rvps2"><span class="rvts25">"language"</span></p>
+</td>
+<td width="437" valign="middle" style="padding: 0px;"><p class="rvps2"><span class="rvts25">an R language construct</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="125" valign="middle" style="padding: 0px;"><p class="rvps2"><span class="rvts25">"special"</span></p>
+</td>
+<td width="437" valign="middle" style="padding: 0px;"><p class="rvps2"><span class="rvts25">an internal function that does not evaluate its arguments</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="125" valign="middle" style="padding: 0px;"><p class="rvps2"><span class="rvts25">"builtin"</span></p>
+</td>
+<td width="437" valign="middle" style="padding: 0px;"><p class="rvps2"><span class="rvts25">an internal function that evaluates its arguments</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="125" valign="middle" style="padding: 0px;"><p class="rvps2"><span class="rvts25">"char"</span></p>
+</td>
+<td width="437" valign="middle" style="padding: 0px;"><p class="rvps2"><span class="rvts25">a ‘scalar’ string object (internal only) ***</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="125" valign="middle" style="padding: 0px;"><p class="rvps2"><span class="rvts25">"logical"</span></p>
+</td>
+<td width="437" valign="middle" style="padding: 0px;"><p class="rvps2"><span class="rvts25">a vector containing logical values</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="125" valign="middle" style="padding: 0px;"><p class="rvps2"><span class="rvts25">"integer"</span></p>
+</td>
+<td width="437" valign="middle" style="padding: 0px;"><p class="rvps2"><span class="rvts25">a vector containing integer values</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="125" valign="middle" style="padding: 0px;"><p class="rvps2"><span class="rvts25">"double"</span></p>
+</td>
+<td width="437" valign="middle" style="padding: 0px;"><p class="rvps2"><span class="rvts25">a vector containing real values</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="125" valign="middle" style="padding: 0px;"><p class="rvps2"><span class="rvts25">"complex"</span></p>
+</td>
+<td width="437" valign="middle" style="padding: 0px;"><p class="rvps2"><span class="rvts25">a vector containing complex values</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="125" valign="middle" style="padding: 0px;"><p class="rvps2"><span class="rvts25">"character"</span></p>
+</td>
+<td width="437" valign="middle" style="padding: 0px;"><p class="rvps2"><span class="rvts25">a vector containing character values</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="125" valign="middle" style="padding: 0px;"><p class="rvps2"><span class="rvts25">"..."</span></p>
+</td>
+<td width="437" valign="middle" style="padding: 0px;"><p class="rvps2"><span class="rvts25">the special variable length argument ***</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="125" valign="middle" style="padding: 0px;"><p class="rvps2"><span class="rvts25">"any"</span></p>
+</td>
+<td width="437" valign="middle" style="padding: 0px;"><p class="rvps2"><span class="rvts25">a special type that matches all types: there are no objects of this type</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="125" valign="middle" style="padding: 0px;"><p class="rvps2"><span class="rvts25">"expression"</span></p>
+</td>
+<td width="437" valign="middle" style="padding: 0px;"><p class="rvps2"><span class="rvts25">an expression object</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="125" valign="middle" style="padding: 0px;"><p class="rvps2"><span class="rvts25">"list"</span></p>
+</td>
+<td width="437" valign="middle" style="padding: 0px;"><p class="rvps2"><span class="rvts25">a list</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="125" valign="middle" style="padding: 0px;"><p class="rvps2"><span class="rvts25">"bytecode"</span></p>
+</td>
+<td width="437" valign="middle" style="padding: 0px;"><p class="rvps2"><span class="rvts25">byte code (internal only) ***</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="125" valign="middle" style="padding: 0px;"><p class="rvps2"><span class="rvts25">"externalptr"</span></p>
+</td>
+<td width="437" valign="middle" style="padding: 0px;"><p class="rvps2"><span class="rvts25">an external pointer object</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="125" valign="middle" style="padding: 0px;"><p class="rvps2"><span class="rvts25">"weakref"</span></p>
+</td>
+<td width="437" valign="middle" style="padding: 0px;"><p class="rvps2"><span class="rvts25">a weak reference object</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="125" valign="middle" style="padding: 0px;"><p class="rvps2"><span class="rvts25">"raw"</span></p>
+</td>
+<td width="437" valign="middle" style="padding: 0px;"><p class="rvps2"><span class="rvts25">a vector containing bytes</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="125" valign="middle" style="padding: 0px;"><p class="rvps2"><span class="rvts25">"S4"</span></p>
+</td>
+<td width="437" valign="middle" style="padding: 0px;"><p class="rvps2"><span class="rvts25">an S4 object which is not a simple object</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="rvps2"><span class="rvts25">Users cannot easily get hold of objects of types marked with a ‘***’.</span></p>
+<p class="rvps2"><a name="index-mode"></a>
+<span class="rvts25"><br/></span></p>
+<p class="rvps2"><span class="rvts25">Function mode gives information about the </span><span class="rvts26">mode</span><span class="rvts25"> of an object in the sense of Becker, Chambers &amp; Wilks (1988), and is more compatible with other implementations of the S language. </span><a name="index-storage_002emode"></a>
+<span class="rvts25">Finally, the function storage.mode returns the </span><span class="rvts26">storage mode</span><span class="rvts25"> of its argument in the sense of Becker et al. (1988). It is generally used when calling functions written in another language, such as C or FORTRAN, to ensure that R objects have the data type expected by the routine being called. (In the S language, vectors with integer or real values are both of mode "numeric", so their storage modes need to be distinguished.)</span></p>
+<h2 class="rvps12"><span class="rvts0"><span class="rvts25"><br/></span></span></h2>
+<h2 class="rvps12"><span class="rvts0"><span class="rvts25"><br/></span></span></h2>
+<p class="rvps2"><span class="rvts25">R </span><a name="index-object-1"></a>
+<span class="rvts25">objects are often coerced to different </span><a name="index-type-1"></a>
+<span class="rvts25">types during computations. There are also many functions available to perform explicit </span><a name="index-coercion"></a>
+<span class="rvts25">coercion. When programming in the R language the type of an object generally doesn’t affect the computations, however, when dealing with foreign languages or the operating system it is often necessary to ensure that an object is of the correct type.</span></p>
+<p class="rvps2"><span class="rvts25"><br/></span></p>
+<p class="rvps13"><a name="INDEX-ATTRIBUTES"></a>
+<span class="rvts25">All objects except&nbsp;</span><span class="rvts33">NULL</span><span class="rvts25">&nbsp;can have one or more attributes attached to them.</span></p>
+<p class="rvps2"><span class="rvts25"><br/></span></p>
+<hr style="height: 1px; color : #000000;  background-color : #000000; border-width : 0px;">
+<p class="rvps2"><a class="rvts30" href="https://stackoverflow.com/questions/8855589/a-comprehensive-survey-of-the-types-of-things-in-r-mode-and-class-and-type">https://stackoverflow.com/questions/8855589/a-comprehensive-survey-of-the-types-of-things-in-r-mode-and-class-and-type</a></p>
+<p class="rvps2"><span class="rvts25"><br/></span></p>
+<p class="rvps2"><span class="rvts25"><br/></span></p>
+<p class="rvps14"><span class="rvts32">|spoken type &nbsp; &nbsp; &nbsp; &nbsp; |class &nbsp; &nbsp; &nbsp; |mode &nbsp; &nbsp; &nbsp; &nbsp;|typeof &nbsp; &nbsp; &nbsp;|storage.mode |</span><br/><span class="rvts32">|:-------------------|:-----------|:-----------|:-----------|:------------|</span><br/><span class="rvts32">|logical vector &nbsp; &nbsp; &nbsp;|logical &nbsp; &nbsp; |logical &nbsp; &nbsp; |logical &nbsp; &nbsp; |logical &nbsp; &nbsp; &nbsp;|</span><br/><span class="rvts32">|integer vector &nbsp; &nbsp; &nbsp;|integer &nbsp; &nbsp; |numeric &nbsp; &nbsp; |integer &nbsp; &nbsp; |integer &nbsp; &nbsp; &nbsp;|</span><br/><span class="rvts32">|numeric vector &nbsp; &nbsp; &nbsp;|numeric &nbsp; &nbsp; |numeric &nbsp; &nbsp; |double &nbsp; &nbsp; &nbsp;|double &nbsp; &nbsp; &nbsp; |</span><br/><span class="rvts32">|complex vector &nbsp; &nbsp; &nbsp;|complex &nbsp; &nbsp; |complex &nbsp; &nbsp; |complex &nbsp; &nbsp; |complex &nbsp; &nbsp; &nbsp;|</span><br/><span class="rvts32">|character vector &nbsp; &nbsp;|character &nbsp; |character &nbsp; |character &nbsp; |character &nbsp; &nbsp;|</span><br/><span class="rvts32">|raw vector &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;|raw &nbsp; &nbsp; &nbsp; &nbsp; |raw &nbsp; &nbsp; &nbsp; &nbsp; |raw &nbsp; &nbsp; &nbsp; &nbsp; |raw &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;|</span><br/><span class="rvts32">|factor &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;|factor &nbsp; &nbsp; &nbsp;|numeric &nbsp; &nbsp; |integer &nbsp; &nbsp; |integer &nbsp; &nbsp; &nbsp;|</span><br/><span class="rvts32">|logical matrix &nbsp; &nbsp; &nbsp;|matrix &nbsp; &nbsp; &nbsp;|logical &nbsp; &nbsp; |logical &nbsp; &nbsp; |logical &nbsp; &nbsp; &nbsp;|</span><br/><span class="rvts32">|numeric matrix &nbsp; &nbsp; &nbsp;|matrix &nbsp; &nbsp; &nbsp;|numeric &nbsp; &nbsp; |double &nbsp; &nbsp; &nbsp;|double &nbsp; &nbsp; &nbsp; |</span><br/><span class="rvts32">|logical array &nbsp; &nbsp; &nbsp; |array &nbsp; &nbsp; &nbsp; |logical &nbsp; &nbsp; |logical &nbsp; &nbsp; |logical &nbsp; &nbsp; &nbsp;|</span><br/><span class="rvts32">|numeric array &nbsp; &nbsp; &nbsp; |array &nbsp; &nbsp; &nbsp; |numeric &nbsp; &nbsp; |double &nbsp; &nbsp; &nbsp;|double &nbsp; &nbsp; &nbsp; |</span><br/><span class="rvts32">|list &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;|list &nbsp; &nbsp; &nbsp; &nbsp;|list &nbsp; &nbsp; &nbsp; &nbsp;|list &nbsp; &nbsp; &nbsp; &nbsp;|list &nbsp; &nbsp; &nbsp; &nbsp; |</span><br/><span class="rvts32">|pairlist &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;|pairlist &nbsp; &nbsp;|pairlist &nbsp; &nbsp;|pairlist &nbsp; &nbsp;|pairlist &nbsp; &nbsp; |</span><br/><span class="rvts32">|data frame &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;|data.frame &nbsp;|list &nbsp; &nbsp; &nbsp; &nbsp;|list &nbsp; &nbsp; &nbsp; &nbsp;|list &nbsp; &nbsp; &nbsp; &nbsp; |</span><br/><span class="rvts32">|closure function &nbsp; &nbsp;|function &nbsp; &nbsp;|function &nbsp; &nbsp;|closure &nbsp; &nbsp; |function &nbsp; &nbsp; |</span><br/><span class="rvts32">|primitive function &nbsp;|function &nbsp; &nbsp;|function &nbsp; &nbsp;|builtin &nbsp; &nbsp; |function &nbsp; &nbsp; |</span><br/><span class="rvts32">|special function &nbsp; &nbsp;|function &nbsp; &nbsp;|function &nbsp; &nbsp;|special &nbsp; &nbsp; |function &nbsp; &nbsp; |</span><br/><span class="rvts32">|environment &nbsp; &nbsp; &nbsp; &nbsp; |environment |environment |environment |environment &nbsp;|</span><br/><span class="rvts32">|null &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;|NULL &nbsp; &nbsp; &nbsp; &nbsp;|NULL &nbsp; &nbsp; &nbsp; &nbsp;|NULL &nbsp; &nbsp; &nbsp; &nbsp;|NULL &nbsp; &nbsp; &nbsp; &nbsp; |</span><br/><span class="rvts32">|formula &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; |formula &nbsp; &nbsp; |call &nbsp; &nbsp; &nbsp; &nbsp;|language &nbsp; &nbsp;|language &nbsp; &nbsp; |</span><br/><span class="rvts32">|expression &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;|expression &nbsp;|expression &nbsp;|expression &nbsp;|expression &nbsp; |</span><br/><span class="rvts32">|call &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;|call &nbsp; &nbsp; &nbsp; &nbsp;|call &nbsp; &nbsp; &nbsp; &nbsp;|language &nbsp; &nbsp;|language &nbsp; &nbsp; |</span><br/><span class="rvts32">|name &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;|name &nbsp; &nbsp; &nbsp; &nbsp;|name &nbsp; &nbsp; &nbsp; &nbsp;|symbol &nbsp; &nbsp; &nbsp;|symbol &nbsp; &nbsp; &nbsp; |</span><br/><span class="rvts32">|paren in expression |( &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; |( &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; |language &nbsp; &nbsp;|language &nbsp; &nbsp; |</span><br/><span class="rvts32">|brace in expression |{ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; |call &nbsp; &nbsp; &nbsp; &nbsp;|language &nbsp; &nbsp;|language &nbsp; &nbsp; |</span><br/><span class="rvts32">|S3 lm object &nbsp; &nbsp; &nbsp; &nbsp;|lm &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;|list &nbsp; &nbsp; &nbsp; &nbsp;|list &nbsp; &nbsp; &nbsp; &nbsp;|list &nbsp; &nbsp; &nbsp; &nbsp; |</span><br/><span class="rvts32">|S4 dummy object &nbsp; &nbsp; |dummy &nbsp; &nbsp; &nbsp; |S4 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;|S4 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;|S4 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; |</span><br/><span class="rvts32">|external pointer &nbsp; &nbsp;|externalptr |externalptr |externalptr |externalptr &nbsp;|</span></p>
+<p></p>
+<p class="rvps4" style="clear: both;"><span class="rvts18">Created with the Personal Edition of HelpNDoc: </span><a class="rvts19" href="https://www.helpauthoringsoftware.com">News and information about help authoring tools and software</a></p>
+
+            </div>
+            
+            <div id="topic_footer"><div id="topic_footer_content">Copyright &copy; &lt;Dates&gt; by &lt;Authors&gt;. All Rights Reserved.</div></div>
+        </div>  <!-- /#topic-content -->
+    </article>
+
+    <footer></footer>
+
+  </div>  <!-- /#main -->
+
+  <div class="mask" data-toggle="sm-nav-expanded"></div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="hndModal" tabindex="-1" role="dialog" aria-labelledby="hndModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="hndModalLabel"></h4>
+        </div>
+        <div class="modal-body">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary modal-btn-close" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="vendors/jquery-1.11.3/jquery.min.js"></script>
+  <script src="vendors/bootstrap-3.3.6/js/bootstrap.min.js"></script>
+  <script src="vendors/fastclick-1.0.6/fastclick.min.js"></script>
+  <script src="vendors/markjs-8.8.3/jquery.mark.min.js"></script>
+  <script src="vendors/uri-1.18.9/uri.min.js"></script>
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <script src="vendors/bootstrap-3.3.6/js/ie10-viewport-bug-workaround.js"></script>
+  
+  <!-- Headroom -->
+  <script src="vendors/headroom-0.9.3/headroom.min.js"></script>
+  <script src="vendors/headroom-0.9.3/jquery.headroom.min.js"></script>
+
+  <!-- JsTree -->
+  <script src="vendors/jstree-3.3.2/jstree.min.js"></script>
+
+  <!-- HelpNDoc scripts -->
+  <script src="_translations.js"></script>
+  <script src="js/hndsd.min.js"></script>
+  <script src="js/hndse.min.js"></script>
+  <script src="js/app.min.js"></script>
+
+  <!-- Scripts -->
+  <script>
+    $(function() {
+      // Instanciate FastClick
+      Origami.fastclick(document.body);
+      // Create the app
+      var app = new Hnd.App();
+      // Update translations
+      hnd_ut(app);
+	  // Custom JS
+	  
+      // Boot the app
+      app.Boot();
+    });
+  </script>
+
+
+
+</body>
+
+</html>
+

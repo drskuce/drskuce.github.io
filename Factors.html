@@ -1,0 +1,546 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="generator" content="HelpNDoc Personal Edition 5.2.0.265">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="favicon.ico"/>
+
+  <title>Factors</title>
+  <meta name="description" content="tyetyurtyurtyurtyurtyurtyurtu" /> 
+  <meta name="keywords" content="">
+
+
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Factors">
+  <meta name="twitter:description" content="tyetyurtyurtyurtyurtyurtyurtu">
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="Factors" />
+  <meta property="og:type" content="article" />
+  <meta property="og:description" content="tyetyurtyurtyurtyurtyurtyurtu" />
+  <meta property="og:site_name" content="R Knowledge Base" /> 
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendors/bootstrap-3.3.6/css/bootstrap.min.css" rel="stylesheet"/>
+
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <link href="vendors/bootstrap-3.3.6/css/ie10-viewport-bug-workaround.css" rel="stylesheet"/>
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+      <script src="vendors/html5shiv-3.7.2/html5shiv.min.js"></script>
+      <script src="vendors/respond-1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  <!-- JsTree styles -->
+  <link href="vendors/jstree-3.3.2/themes/default/style.min.css" rel="stylesheet"/>
+
+  <!-- Hnd styles -->
+  <link href="css/layout.min.css" rel="stylesheet" />
+  <link href="css/effects.min.css" rel="stylesheet" />
+  <link href="css/theme-light-blue.min.css" rel="stylesheet" />
+  <link href="css/print.min.css" rel="stylesheet" media="print" />
+  <style type="text/css">nav { width: 350px} @media screen and (min-width:769px) { body.md-nav-expanded #main { margin-left: 350px} body.md-nav-expanded header { padding-left: 364px} }</style>
+
+  <!-- Content style -->
+  <link href="css/hnd.content.css" rel="stylesheet" />
+
+  
+
+
+
+</head>
+
+<body class="md-nav-expanded">
+
+
+
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible">Skip to main content</a>
+  </div>
+
+  <header class="headroom">
+    <button class="hnd-toggle btn btn-default">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>        
+    </button>
+    <h1>R Knowledge Base</h1>
+    
+  </header>
+
+  <nav class="md-nav-expanded">
+    <!-- Nav tabs -->
+    <ul class="tab-tabs nav nav-tabs" role="tablist">
+      <li id="nav-close"> 
+        <button class="hnd-toggle btn btn-default">
+          <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+        </button>
+      </li>
+      
+	  
+        <li role="presentation" class="tab active">
+            <a href="#contents" aria-controls="contents" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-list"></i>
+                Contents
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#index" aria-controls="index" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-asterisk"></i>
+                Index
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#search" aria-controls="search" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-search"></i>
+                Search
+            </a>
+        </li>
+      
+    </ul>  <!-- /Nav tabs -->
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+	  
+      <div role="tabpanel" class="tab-pane active" id="contents">
+        <div id="toc" class="tree-container unselectable"
+            data-url="_toc.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /contents-->
+      
+      <div role="tabpanel" class="tab-pane" id="index">
+        <div id="keywords" class="tree-container unselectable"
+            data-url="_keywords.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /index-->
+      
+      <div role="tabpanel" class="tab-pane" id="search">
+        <div class="search-content">
+          <div class="search-input">
+            <form id="search-form">
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="input-search" name="input-search" placeholder="Search..." />
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit">
+                      <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </form>
+          </div>  <!-- /search-input -->
+          <div class="search-result">
+            <div id="search-info"></div>
+            <div class="tree-container unselectable" id="search-tree"></div>
+          </div>  <!-- /search-result -->
+        </div>  <!-- /search-content -->
+      </div>  <!-- /search-->
+      
+    </div>  <!-- /Tab panes -->
+
+  </nav>
+
+  <div id="main">
+
+    <article>
+        <div id="topic-content" class="container-fluid" 
+		  data-hnd-id="Factors"
+		  data-hnd-context="18"
+		  data-hnd-title="Factors"
+		>
+            
+                <div class="navigation">
+                    <ol class="breadcrumb">
+                        <li><a href="RConcepts.html">R Concepts</a></li>
+                    </ol>
+                    <div class="nav-arrows">
+                        <div class="btn-group btn-group-xs" role="group"><a class="btn btn-default" href="RConcepts.html" title="R Concepts" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a><a class="btn btn-default" href="Names.html" title="Names" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="Packages.html" title="Packages" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
+                    </div>
+                </div> 
+            
+
+            <a id="main-content"></a>
+
+            <h2>Factors</h2>
+
+            <div class="main-content">
+                
+<p></p>
+<p class="rvps2"><span class="rvts27"><br/></span></p>
+<p class="rvps2"><span class="rvts27">Factors are kind of data that has only a small fixed set of possible values that are not numbers. They handle nominal and ordered categorical data. They arise in many experimental settings. A factor is a set of names, like (red, green, blue) or (male, female). These names are called </span><span class="rvts28">levels</span><span class="rvts27">. &nbsp;Clearly these are data, but a level eg </span><span class="rvts28">red</span><span class="rvts27"> has no type. Factors are in fact stored as a one dimensional integer vector, but you cant treat them thus. R maps levels to and from integers automatically.</span></p>
+<p class="rvps2"><span class="rvts27"><br/></span></p>
+<p class="rvps2"><span class="rvts27">Perhaps one could say that a factor is represented as integers, but &nbsp;one would not say that factors are integers. </span></p>
+<p class="rvps2"><span class="rvts27"><br/></span></p>
+<p class="rvps2"><span class="rvts27">Unfortunately R often does not seem to consider these like data, but it could. They are a kind of second class data.</span></p>
+<p class="rvps32"><span class="rvts27"><br/></span></p>
+<p class="rvps32"><span class="rvts27"><br/></span></p>
+<div class="rvps35"><table border="1" cellpadding="4" cellspacing="-1" style="border-width: 0px; border-collapse: collapse;">
+<tr valign="top">
+<td width="71" valign="top" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px;"><p class="rvps33"><span class="rvts130">factor</span></p>
+</td>
+<td width="96" valign="top" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px;"><p class="rvps33"><span class="rvts27">represents</span></p>
+</td>
+<td width="86" valign="top" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px;"><p class="rvps33"><span class="rvts27">data</span></p>
+</td>
+<td width="75" valign="top" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px;"><p class="rvps33"><span class="rvts27">/that is a</span></p>
+</td>
+<td width="81" valign="top" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px;"><p class="rvps33"><span class="rvts27">set/ of named values</span></p>
+</td>
+<td width="9" valign="top" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px;"><p class="rvps33"><span class="rvts27"><br/></span></p>
+</td>
+<td width="1" valign="top" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px;"><p class="rvps33"><span class="rvts27"><br/></span></p>
+</td>
+<td width="1" valign="top" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px;"><p class="rvps33"><span class="rvts27"><br/></span></p>
+</td>
+<td width="43" valign="top" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px;"><p class="rvps33"><span class="rvts27"><br/></span></p>
+</td>
+<td width="122" valign="top" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px;"><p class="rvps33"><span class="rvts27"><br/></span></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="71" valign="top" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px;"><p class="rvps33"><span class="rvts130">factor</span></p>
+</td>
+<td width="96" valign="top" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px;"><p class="rvps33"><span class="rvts27">has</span></p>
+</td>
+<td width="86" valign="top" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px;"><p class="rvps33"><span class="rvts27">2m levels/set of</span></p>
+</td>
+<td width="75" valign="top" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px;"><p class="rvps33"><span class="rvts27"><br/></span></p>
+</td>
+<td width="81" valign="top" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px;"><p class="rvps33"><span class="rvts27"><br/></span></p>
+</td>
+<td width="9" valign="top" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px;"><p class="rvps33"><span class="rvts27"><br/></span></p>
+</td>
+<td width="1" valign="top" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px;"><p class="rvps33"><span class="rvts27"><br/></span></p>
+</td>
+<td width="1" valign="top" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px;"><p class="rvps33"><span class="rvts27"><br/></span></p>
+</td>
+<td width="43" valign="top" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px;"><p class="rvps33"><span class="rvts27"><br/></span></p>
+</td>
+<td width="122" valign="top" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px;"><p class="rvps33"><span class="rvts27"><br/></span></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="71" valign="top" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px;"><p class="rvps33"><span class="rvts27">level</span></p>
+</td>
+<td width="96" valign="top" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px;"><p class="rvps33"><span class="rvts27">isako</span></p>
+</td>
+<td width="86" valign="top" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px;"><p class="rvps33"><span class="rvts27">named value</span></p>
+</td>
+<td width="75" valign="top" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px;"><p class="rvps33"><span class="rvts27"><br/></span></p>
+</td>
+<td width="81" valign="top" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px;"><p class="rvps33"><span class="rvts27"><br/></span></p>
+</td>
+<td width="9" valign="top" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px;"><p class="rvps33"><span class="rvts27"><br/></span></p>
+</td>
+<td width="1" valign="top" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px;"><p class="rvps33"><span class="rvts27"><br/></span></p>
+</td>
+<td width="1" valign="top" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px;"><p class="rvps33"><span class="rvts27"><br/></span></p>
+</td>
+<td width="43" valign="top" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px;"><p class="rvps33"><span class="rvts27"><br/></span></p>
+</td>
+<td width="122" valign="top" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px;"><p class="rvps33"><span class="rvts27"><br/></span></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="71" valign="top" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px;"><p class="rvps33"><span class="rvts27">factor</span></p>
+</td>
+<td width="96" valign="top" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px;"><p class="rvps33"><span class="rvts27">is stored as</span></p>
+</td>
+<td width="86" valign="top" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px;"><p class="rvps33"><span class="rvts27">an integer vector</span></p>
+</td>
+<td width="75" valign="top" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px;"><p class="rvps33"><span class="rvts27"><br/></span></p>
+</td>
+<td width="81" valign="top" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px;"><p class="rvps33"><span class="rvts27"><br/></span></p>
+</td>
+<td width="9" valign="top" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px;"><p class="rvps33"><span class="rvts27"><br/></span></p>
+</td>
+<td width="1" valign="top" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px;"><p class="rvps33"><span class="rvts27"><br/></span></p>
+</td>
+<td width="1" valign="top" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px;"><p class="rvps33"><span class="rvts27"><br/></span></p>
+</td>
+<td width="43" valign="top" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px;"><p class="rvps33"><span class="rvts27"><br/></span></p>
+</td>
+<td width="122" valign="top" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px;"><p class="rvps33"><span class="rvts27"><br/></span></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="71" valign="top" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px;"><p class="rvps33"><span class="rvts27">#</span></p>
+</td>
+<td width="96" valign="top" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px;"><p class="rvps33"><span class="rvts27">has</span></p>
+</td>
+<td width="86" valign="top" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px;"><p class="rvps33"><span class="rvts27">class</span></p>
+</td>
+<td width="75" valign="top" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px;"><p class="rvps33"><span class="rvts27">=factor</span></p>
+</td>
+<td width="81" valign="top" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px;"><p class="rvps33"><span class="rvts27"><br/></span></p>
+</td>
+<td width="9" valign="top" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px;"><p class="rvps33"><span class="rvts27"><br/></span></p>
+</td>
+<td width="1" valign="top" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px;"><p class="rvps33"><span class="rvts27"><br/></span></p>
+</td>
+<td width="1" valign="top" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px;"><p class="rvps33"><span class="rvts27"><br/></span></p>
+</td>
+<td width="43" valign="top" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px;"><p class="rvps33"><span class="rvts27"><br/></span></p>
+</td>
+<td width="122" valign="top" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px;"><p class="rvps33"><span class="rvts27"><br/></span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="rvps2"><span class="rvts27"><br/></span></p>
+<p class="rvps2"><span class="rvts27"><br/></span></p>
+<p class="rvps2"><span class="rvts27"><br/></span></p>
+<p class="rvps2"><span class="rvts27"><br/></span></p>
+<p class="rvps2"><span class="rvts27"><br/></span></p>
+<div class="rvps2"><table width="90%" border="1" cellpadding="1" cellspacing="2" style="border-width: 0px; border-spacing: 2px;">
+<tr valign="top">
+<td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">!factor</span></p>
+</td>
+<td width="113" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">has</span></p>
+</td>
+<td width="95" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">level/1m</span></p>
+</td>
+<td width="33" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px;"><br/>
+</td>
+<td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px;"><br/>
+</td>
+<td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px;"><br/>
+</td>
+<td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px;"><br/>
+</td>
+<td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px;"><br/>
+</td>
+<td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px;"><br/>
+</td>
+<td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px;"><br/>
+</td>
+</tr>
+<tr valign="top">
+<td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">#</span></p>
+</td>
+<td width="113" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">is stored as</span></p>
+</td>
+<td width="95" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">integer vector</span></p>
+</td>
+<td width="33" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px;"><br/>
+</td>
+<td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px;"><br/>
+</td>
+<td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px;"><br/>
+</td>
+<td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px;"><br/>
+</td>
+<td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px;"><br/>
+</td>
+<td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px;"><br/>
+</td>
+<td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px;"><br/>
+</td>
+</tr>
+<tr valign="top">
+<td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">#</span></p>
+</td>
+<td width="113" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">is a sequence of</span></p>
+</td>
+<td width="95" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">level</span></p>
+</td>
+<td width="33" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px;"><br/>
+</td>
+<td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px;"><br/>
+</td>
+<td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px;"><br/>
+</td>
+<td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px;"><br/>
+</td>
+<td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px;"><br/>
+</td>
+<td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px;"><br/>
+</td>
+<td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px;"><br/>
+</td>
+</tr>
+<tr valign="top">
+<td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">#</span></p>
+</td>
+<td width="113" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">is/can</span></p>
+</td>
+<td width="95" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">ordered</span></p>
+</td>
+<td width="33" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px;"><br/>
+</td>
+<td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px;"><br/>
+</td>
+<td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px;"><br/>
+</td>
+<td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px;"><br/>
+</td>
+<td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px;"><br/>
+</td>
+<td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px;"><br/>
+</td>
+<td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px;"><br/>
+</td>
+</tr>
+<tr valign="top">
+<td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">level</span></p>
+</td>
+<td width="113" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">isako</span></p>
+</td>
+<td width="95" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">name</span></p>
+</td>
+<td width="33" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px;"><br/>
+</td>
+<td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px;"><br/>
+</td>
+<td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px;"><br/>
+</td>
+<td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px;"><br/>
+</td>
+<td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px;"><br/>
+</td>
+<td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px;"><br/>
+</td>
+<td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px;"><br/>
+</td>
+</tr>
+</table>
+</div>
+<p class="rvps2"><span class="rvts27"><br/></span></p>
+<hr style="height: 1px; color : #000000;  background-color : #000000; border-width : 0px;">
+<hr style="height: 1px; color : #000000;  background-color : #000000; border-width : 0px;">
+<h2 class="rvps45"><span class="rvts0"><span class="rvts124">Factors</span></span></h2>
+<p class="rvps44"><span class="rvts123">Tell R that a variable is&nbsp;</span><span class="rvts126">nominal</span><span class="rvts128">&nbsp;</span><span class="rvts123">by making it a factor. The factor stores the nominal values as a vector of integers in the range [ 1... k ] (where k is the number of unique values in the nominal variable), and an internal vector of character strings (the original values) mapped to these integers.</span></p>
+<p class="rvps44"><span class="rvts125"># variable gender with 20 "male" entries and</span><span class="rvts127">&nbsp;</span><br/><span class="rvts125"># 30 "female" entries</span><span class="rvts127">&nbsp;</span><br/><span class="rvts125">gender &lt;- c(rep("male",20), rep("female", 30))</span><span class="rvts127">&nbsp;</span><br/><span class="rvts125">gender &lt;- factor(gender)</span><span class="rvts127">&nbsp;</span><br/><span class="rvts125"># stores gender as 20 1s and 30 2s and associates</span><br/><span class="rvts125"># 1=female, 2=male internally (alphabetically)</span><br/><span class="rvts125"># R now treats gender as a nominal variable</span><span class="rvts127">&nbsp;</span><br/><span class="rvts125">summary(gender)</span></p>
+<p class="rvps44"><span class="rvts123">An ordered factor is used to represent an&nbsp;</span><span class="rvts126">ordinal variable</span><span class="rvts123">.</span></p>
+<p class="rvps44"><span class="rvts125"># variable rating coded as "large", "medium", "small'</span><br/><span class="rvts125">rating &lt;- ordered(rating)</span><br/><span class="rvts125"># recodes rating to 1,2,3 and associates</span><br/><span class="rvts125"># 1=large, 2=medium, 3=small internally</span><br/><span class="rvts125"># R now treats rating as ordinal</span></p>
+<p class="rvps44"><span class="rvts123">R will treat factors as nominal variables and ordered factors as ordinal variables in statistical proceedures and graphical analyses. You can use options in the&nbsp;</span><span class="rvts126">factor( )</span><span class="rvts128">&nbsp;</span><span class="rvts123">and&nbsp;</span><span class="rvts126">ordered( )</span><span class="rvts123">&nbsp;functions to control the mapping of integers to strings (overiding the alphabetical ordering). You can also use factors to create&nbsp;</span><a class="rvts129" href="http://www.statmethods.net/input/valuelabels.html">value labels</a><span class="rvts123">. For more on factors see the&nbsp;</span><a class="rvts129" href="http://www.ats.ucla.edu/stat/R/modules/factor_variables.htm">UCLA page</a><span class="rvts123">.</span></p>
+<h4 class="rvps7"><a name="FACTORS-1"></a>
+<span class="rvts0"><span class="rvts21">2.3.1 Factors</span></span></h4>
+<p class="rvps13"><a name="INDEX-FUNCTION_002C-MODELING"></a>
+<span class="rvts40">Factors are used to describe items that can have a finite number of values (gender, social class, etc.). A factor has a&nbsp;</span><span class="rvts92">levels</span><span class="rvts40">&nbsp;attribute and class&nbsp;</span><span class="rvts92">"factor"</span><span class="rvts40">. Optionally, it may also contain a&nbsp;</span><span class="rvts92">contrasts</span><span class="rvts40">&nbsp;attribute which controls the parametrisation used when the factor is used in a&nbsp;modeling functions.</span></p>
+<p class="rvps13"><span class="rvts40">A factor may be purely nominal or may have ordered categories. In the latter case, it should be defined as such and have a&nbsp;</span><span class="rvts92">class</span><span class="rvts40">&nbsp;vector</span><span class="rvts92">c("ordered"," factor")</span><span class="rvts40">.</span></p>
+<p class="rvps13"><span class="rvts40"><br/></span></p>
+<p class="rvps20"><a class="rvts85" href="https://www.tutorialspoint.com/r/r_factors.htm">https://www.tutorialspoint.com/r/r_factors.htm</a></p>
+<p class="rvps13"><span class="rvts122">Factors are the data objects which are used to categorize the data and store it as levels. They can store both strings and integers. They are useful in the columns which have a limited number of unique values. Like "Male, "Female" and&nbsp;</span><span class="rvts54"> True, False etc. They are useful in data analysis for statistical modeling.</span></p>
+<p class="rvps20"><span class="rvts54">Factors are created using the&nbsp;</span><span class="rvts55">factor ()</span><span class="rvts54">&nbsp;function by taking a vector as input.</span></p>
+<h2 class="rvps21"><span class="rvts0"><span class="rvts56">Example</span></span></h2>
+<p class="rvps22"><span class="rvts58"># Create a vector as input.</span><br/><span class="rvts59">data </span><span class="rvts60">&lt;-</span><span class="rvts59"> c</span><span class="rvts60">(</span><span class="rvts63">"East"</span><span class="rvts60">,</span><span class="rvts63">"West"</span><span class="rvts60">,</span><span class="rvts63">"East"</span><span class="rvts60">,</span><span class="rvts63">"North"</span><span class="rvts60">,</span><span class="rvts63">"North"</span><span class="rvts60">,</span><span class="rvts63">"East"</span><span class="rvts60">,</span><span class="rvts63">"West"</span><span class="rvts60">,</span><span class="rvts63">"West"</span><span class="rvts60">,</span><span class="rvts63">"West"</span><span class="rvts60">,</span><span class="rvts63">"East"</span><span class="rvts60">,</span><span class="rvts63">"North"</span><span class="rvts60">)</span><br/><span class="rvts62">print</span><span class="rvts60">(</span><span class="rvts59">data</span><span class="rvts60">)</span><br/><span class="rvts62">print</span><span class="rvts60">(</span><span class="rvts62">is</span><span class="rvts60">.</span><span class="rvts59">factor</span><span class="rvts60">(</span><span class="rvts59">data</span><span class="rvts60">))</span><br/><span class="rvts58"># Apply the factor function.</span><br/><span class="rvts59">factor_data </span><span class="rvts60">&lt;-</span><span class="rvts59"> factor</span><span class="rvts60">(</span><span class="rvts59">data</span><span class="rvts60">)</span><br/><span class="rvts62">print</span><span class="rvts60">(</span><span class="rvts59">factor_data</span><span class="rvts60">)</span><br/><span class="rvts62">print</span><span class="rvts60">(</span><span class="rvts62">is</span><span class="rvts60">.</span><span class="rvts59">factor</span><span class="rvts60">(</span><span class="rvts59">factor_data</span><span class="rvts60">))</span></p>
+<p class="rvps20"><span class="rvts54">When we execute the above code, it produces the following result −</span></p>
+<p class="rvps23"><span class="rvts57"> [1] "East" &nbsp;"West" &nbsp;"East" &nbsp;"North" "North" "East" &nbsp;"West" &nbsp;"West" &nbsp;"West" &nbsp;"East" "North"</span><br/><span class="rvts57">[1] FALSE</span><br/><span class="rvts57"> [1] East &nbsp;West &nbsp;East &nbsp;North North East &nbsp;West &nbsp;West &nbsp;West &nbsp;East &nbsp;North</span><br/><span class="rvts57">Levels: East North West</span><br/><span class="rvts57">[1] TRUE</span></p>
+<h2 class="rvps21"><span class="rvts0"><span class="rvts56">Factors in Data Frame</span></span></h2>
+<p class="rvps20"><span class="rvts54">On creating any data frame with a column of text data, R treats the text column as categorical data and creates factors on it.</span></p>
+<p class="rvps22"><span class="rvts58"># Create the vectors for data frame.</span><br/><span class="rvts59">height </span><span class="rvts60">&lt;-</span><span class="rvts59"> c</span><span class="rvts60">(</span><span class="rvts61">132</span><span class="rvts60">,</span><span class="rvts61">151</span><span class="rvts60">,</span><span class="rvts61">162</span><span class="rvts60">,</span><span class="rvts61">139</span><span class="rvts60">,</span><span class="rvts61">166</span><span class="rvts60">,</span><span class="rvts61">147</span><span class="rvts60">,</span><span class="rvts61">122</span><span class="rvts60">)</span><br/><span class="rvts59">weight </span><span class="rvts60">&lt;-</span><span class="rvts59"> c</span><span class="rvts60">(</span><span class="rvts61">48</span><span class="rvts60">,</span><span class="rvts61">49</span><span class="rvts60">,</span><span class="rvts61">66</span><span class="rvts60">,</span><span class="rvts61">53</span><span class="rvts60">,</span><span class="rvts61">67</span><span class="rvts60">,</span><span class="rvts61">52</span><span class="rvts60">,</span><span class="rvts61">40</span><span class="rvts60">)</span><br/><span class="rvts59">gender </span><span class="rvts60">&lt;-</span><span class="rvts59"> c</span><span class="rvts60">(</span><span class="rvts63">"male"</span><span class="rvts60">,</span><span class="rvts63">"male"</span><span class="rvts60">,</span><span class="rvts63">"female"</span><span class="rvts60">,</span><span class="rvts63">"female"</span><span class="rvts60">,</span><span class="rvts63">"male"</span><span class="rvts60">,</span><span class="rvts63">"female"</span><span class="rvts60">,</span><span class="rvts63">"male"</span><span class="rvts60">)</span><br/><span class="rvts58"># Create the data frame.</span><br/><span class="rvts59">input_data </span><span class="rvts60">&lt;-</span><span class="rvts59"> data</span><span class="rvts60">.</span><span class="rvts59">frame</span><span class="rvts60">(</span><span class="rvts59">height</span><span class="rvts60">,</span><span class="rvts59">weight</span><span class="rvts60">,</span><span class="rvts59">gender</span><span class="rvts60">)</span><br/><span class="rvts62">print</span><span class="rvts60">(</span><span class="rvts59">input_data</span><span class="rvts60">)</span><br/><span class="rvts58"># Test if the gender column is a factor.</span><br/><span class="rvts62">print</span><span class="rvts60">(</span><span class="rvts62">is</span><span class="rvts60">.</span><span class="rvts59">factor</span><span class="rvts60">(</span><span class="rvts59">input_data$gender</span><span class="rvts60">))</span><br/><span class="rvts58"># Print the gender column so see the levels.</span><br/><span class="rvts62">print</span><span class="rvts60">(</span><span class="rvts59">input_data$gender</span><span class="rvts60">)</span></p>
+<p class="rvps20"><span class="rvts54">When we execute the above code, it produces the following result −</span></p>
+<p class="rvps23"><span class="rvts57"> &nbsp;height weight gender</span><br/><span class="rvts57">1 &nbsp; &nbsp;132 &nbsp; &nbsp; 48 &nbsp; male</span><br/><span class="rvts57">2 &nbsp; &nbsp;151 &nbsp; &nbsp; 49 &nbsp; male</span><br/><span class="rvts57">3 &nbsp; &nbsp;162 &nbsp; &nbsp; 66 female</span><br/><span class="rvts57">4 &nbsp; &nbsp;139 &nbsp; &nbsp; 53 female</span><br/><span class="rvts57">5 &nbsp; &nbsp;166 &nbsp; &nbsp; 67 &nbsp; male</span><br/><span class="rvts57">6 &nbsp; &nbsp;147 &nbsp; &nbsp; 52 female</span><br/><span class="rvts57">7 &nbsp; &nbsp;122 &nbsp; &nbsp; 40 &nbsp; male</span><br/><span class="rvts57">[1] TRUE</span><br/><span class="rvts57">[1] male &nbsp; male &nbsp; female female male &nbsp; female male &nbsp;</span><br/><span class="rvts57">Levels: female male</span></p>
+<h2 class="rvps21"><span class="rvts0"><span class="rvts56">Changing the Order of Levels</span></span></h2>
+<p class="rvps20"><span class="rvts54">The order of the levels in a factor can be changed by applying the factor function again with new order of the levels.</span></p>
+<p class="rvps22"><span class="rvts59">data </span><span class="rvts60">&lt;-</span><span class="rvts59"> c</span><span class="rvts60">(</span><span class="rvts63">"East"</span><span class="rvts60">,</span><span class="rvts63">"West"</span><span class="rvts60">,</span><span class="rvts63">"East"</span><span class="rvts60">,</span><span class="rvts63">"North"</span><span class="rvts60">,</span><span class="rvts63">"North"</span><span class="rvts60">,</span><span class="rvts63">"East"</span><span class="rvts60">,</span><span class="rvts63">"West"</span><span class="rvts60">,</span><span class="rvts63">"West"</span><span class="rvts60">,</span><span class="rvts63">"West"</span><span class="rvts60">,</span><span class="rvts63">"East"</span><span class="rvts60">,</span><span class="rvts63">"North"</span><span class="rvts60">)</span><br/><span class="rvts58"># Create the factors</span><br/><span class="rvts59">factor_data </span><span class="rvts60">&lt;-</span><span class="rvts59"> factor</span><span class="rvts60">(</span><span class="rvts59">data</span><span class="rvts60">)</span><br/><span class="rvts62">print</span><span class="rvts60">(</span><span class="rvts59">factor_data</span><span class="rvts60">)</span><br/><span class="rvts58"># Apply the factor function with required order of the level.</span><br/><span class="rvts59">new_order_data </span><span class="rvts60">&lt;-</span><span class="rvts59"> factor</span><span class="rvts60">(</span><span class="rvts59">factor_data</span><span class="rvts60">,</span><span class="rvts59">levels </span><span class="rvts60">=</span><span class="rvts59"> c</span><span class="rvts60">(</span><span class="rvts63">"East"</span><span class="rvts60">,</span><span class="rvts63">"West"</span><span class="rvts60">,</span><span class="rvts63">"North"</span><span class="rvts60">))</span><br/><span class="rvts62">print</span><span class="rvts60">(</span><span class="rvts59">new_order_data</span><span class="rvts60">)</span></p>
+<p class="rvps20"><span class="rvts54">When we execute the above code, it produces the following result −</span></p>
+<p class="rvps23"><span class="rvts57"> [1] East &nbsp;West &nbsp;East &nbsp;North North East &nbsp;West &nbsp;West &nbsp;West &nbsp;East &nbsp;North</span><br/><span class="rvts57">Levels: East North West</span><br/><span class="rvts57"> [1] East &nbsp;West &nbsp;East &nbsp;North North East &nbsp;West &nbsp;West &nbsp;West &nbsp;East &nbsp;North</span><br/><span class="rvts57">Levels: East West North</span></p>
+<h2 class="rvps21"><span class="rvts0"><span class="rvts56">Generating Factor Levels</span></span></h2>
+<p class="rvps20"><span class="rvts54">We can generate factor levels by using the&nbsp;</span><span class="rvts55">gl()</span><span class="rvts54">&nbsp;function. It takes two integers as input which indicates how many levels and how many times each level.</span></p>
+<h3 class="rvps24"><span class="rvts0"><span class="rvts64">Syntax</span></span></h3>
+<p class="rvps23"><span class="rvts57">gl(n, k, labels)</span></p>
+<p class="rvps20"><span class="rvts54">Following is the description of the parameters used −</span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside;">
+<li style="margin-left: 0px" class="rvps20"><span class="rvts55">n</span><span class="rvts54">&nbsp;is a integer giving the number of levels.</span></li>
+<li style="margin-left: 0px" class="rvps20"><span class="rvts55">k</span><span class="rvts54">&nbsp;is a integer giving the number of replications.</span></li>
+<li style="margin-left: 0px" class="rvps20"><span class="rvts55">labels</span><span class="rvts54">&nbsp;is a vector of labels for the resulting factor levels.</span></li>
+</ul>
+<h3 class="rvps24"><span class="rvts0"><span class="rvts64">Example</span></span></h3>
+<p class="rvps22"><span class="rvts59">v </span><span class="rvts60">&lt;-</span><span class="rvts59"> gl</span><span class="rvts60">(</span><span class="rvts61">3</span><span class="rvts60">,</span><span class="rvts59"> </span><span class="rvts61">4</span><span class="rvts60">,</span><span class="rvts59"> labels </span><span class="rvts60">=</span><span class="rvts59"> c</span><span class="rvts60">(</span><span class="rvts63">"Tampa"</span><span class="rvts60">,</span><span class="rvts59"> </span><span class="rvts63">"Seattle"</span><span class="rvts60">,</span><span class="rvts63">"Boston"</span><span class="rvts60">))</span><br/><span class="rvts62">print</span><span class="rvts60">(</span><span class="rvts59">v</span><span class="rvts60">)</span></p>
+<p class="rvps20"><span class="rvts54">When we execute the above code, it produces the following result −</span></p>
+<p class="rvps23"><span class="rvts57">Tampa &nbsp; Tampa &nbsp; Tampa &nbsp; Tampa &nbsp; Seattle Seattle Seattle Seattle Boston </span><br/><span class="rvts57">[10] Boston &nbsp;Boston &nbsp;Boston </span><br/><span class="rvts57">Levels: Tampa Seattle Boston</span></p>
+<p></p>
+<p class="rvps4" style="clear: both;"><span class="rvts18">Created with the Personal Edition of HelpNDoc: </span><a class="rvts19" href="https://www.helpndoc.com/feature-tour/iphone-website-generation">Free iPhone documentation generator</a></p>
+
+            </div>
+            
+            <div id="topic_footer"><div id="topic_footer_content">Copyright &copy; &lt;Dates&gt; by &lt;Authors&gt;. All Rights Reserved.</div></div>
+        </div>  <!-- /#topic-content -->
+    </article>
+
+    <footer></footer>
+
+  </div>  <!-- /#main -->
+
+  <div class="mask" data-toggle="sm-nav-expanded"></div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="hndModal" tabindex="-1" role="dialog" aria-labelledby="hndModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="hndModalLabel"></h4>
+        </div>
+        <div class="modal-body">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary modal-btn-close" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="vendors/jquery-1.11.3/jquery.min.js"></script>
+  <script src="vendors/bootstrap-3.3.6/js/bootstrap.min.js"></script>
+  <script src="vendors/fastclick-1.0.6/fastclick.min.js"></script>
+  <script src="vendors/markjs-8.8.3/jquery.mark.min.js"></script>
+  <script src="vendors/uri-1.18.9/uri.min.js"></script>
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <script src="vendors/bootstrap-3.3.6/js/ie10-viewport-bug-workaround.js"></script>
+  
+  <!-- Headroom -->
+  <script src="vendors/headroom-0.9.3/headroom.min.js"></script>
+  <script src="vendors/headroom-0.9.3/jquery.headroom.min.js"></script>
+
+  <!-- JsTree -->
+  <script src="vendors/jstree-3.3.2/jstree.min.js"></script>
+
+  <!-- HelpNDoc scripts -->
+  <script src="_translations.js"></script>
+  <script src="js/hndsd.min.js"></script>
+  <script src="js/hndse.min.js"></script>
+  <script src="js/app.min.js"></script>
+
+  <!-- Scripts -->
+  <script>
+    $(function() {
+      // Instanciate FastClick
+      Origami.fastclick(document.body);
+      // Create the app
+      var app = new Hnd.App();
+      // Update translations
+      hnd_ut(app);
+	  // Custom JS
+	  
+      // Boot the app
+      app.Boot();
+    });
+  </script>
+
+
+
+</body>
+
+</html>
+

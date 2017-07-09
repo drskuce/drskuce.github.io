@@ -1,0 +1,500 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="generator" content="HelpNDoc Personal Edition 5.2.0.265">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="favicon.ico"/>
+
+  <title>Variables</title>
+  <meta name="description" content="tyetyurtyurtyurtyurtyurtyurtu" /> 
+  <meta name="keywords" content="workspace">
+
+
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Variables">
+  <meta name="twitter:description" content="tyetyurtyurtyurtyurtyurtyurtu">
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="Variables" />
+  <meta property="og:type" content="article" />
+  <meta property="og:description" content="tyetyurtyurtyurtyurtyurtyurtu" />
+  <meta property="og:site_name" content="R Knowledge Base" /> 
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendors/bootstrap-3.3.6/css/bootstrap.min.css" rel="stylesheet"/>
+
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <link href="vendors/bootstrap-3.3.6/css/ie10-viewport-bug-workaround.css" rel="stylesheet"/>
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+      <script src="vendors/html5shiv-3.7.2/html5shiv.min.js"></script>
+      <script src="vendors/respond-1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  <!-- JsTree styles -->
+  <link href="vendors/jstree-3.3.2/themes/default/style.min.css" rel="stylesheet"/>
+
+  <!-- Hnd styles -->
+  <link href="css/layout.min.css" rel="stylesheet" />
+  <link href="css/effects.min.css" rel="stylesheet" />
+  <link href="css/theme-light-blue.min.css" rel="stylesheet" />
+  <link href="css/print.min.css" rel="stylesheet" media="print" />
+  <style type="text/css">nav { width: 350px} @media screen and (min-width:769px) { body.md-nav-expanded #main { margin-left: 350px} body.md-nav-expanded header { padding-left: 364px} }</style>
+
+  <!-- Content style -->
+  <link href="css/hnd.content.css" rel="stylesheet" />
+
+  
+
+
+
+</head>
+
+<body class="md-nav-expanded">
+
+
+
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible">Skip to main content</a>
+  </div>
+
+  <header class="headroom">
+    <button class="hnd-toggle btn btn-default">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>        
+    </button>
+    <h1>R Knowledge Base</h1>
+    
+  </header>
+
+  <nav class="md-nav-expanded">
+    <!-- Nav tabs -->
+    <ul class="tab-tabs nav nav-tabs" role="tablist">
+      <li id="nav-close"> 
+        <button class="hnd-toggle btn btn-default">
+          <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+        </button>
+      </li>
+      
+	  
+        <li role="presentation" class="tab active">
+            <a href="#contents" aria-controls="contents" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-list"></i>
+                Contents
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#index" aria-controls="index" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-asterisk"></i>
+                Index
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#search" aria-controls="search" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-search"></i>
+                Search
+            </a>
+        </li>
+      
+    </ul>  <!-- /Nav tabs -->
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+	  
+      <div role="tabpanel" class="tab-pane active" id="contents">
+        <div id="toc" class="tree-container unselectable"
+            data-url="_toc.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /contents-->
+      
+      <div role="tabpanel" class="tab-pane" id="index">
+        <div id="keywords" class="tree-container unselectable"
+            data-url="_keywords.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /index-->
+      
+      <div role="tabpanel" class="tab-pane" id="search">
+        <div class="search-content">
+          <div class="search-input">
+            <form id="search-form">
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="input-search" name="input-search" placeholder="Search..." />
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit">
+                      <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </form>
+          </div>  <!-- /search-input -->
+          <div class="search-result">
+            <div id="search-info"></div>
+            <div class="tree-container unselectable" id="search-tree"></div>
+          </div>  <!-- /search-result -->
+        </div>  <!-- /search-content -->
+      </div>  <!-- /search-->
+      
+    </div>  <!-- /Tab panes -->
+
+  </nav>
+
+  <div id="main">
+
+    <article>
+        <div id="topic-content" class="container-fluid" 
+		  data-hnd-id="Variables"
+		  data-hnd-context="23"
+		  data-hnd-title="Variables"
+		>
+            
+                <div class="navigation">
+                    <ol class="breadcrumb">
+                        <li><a href="RConcepts.html">R Concepts</a></li><li><a href="SyntacticStructures.html">Syntactic Structures</a></li><li><a href="Expressions.html">Expressions</a></li>
+                    </ol>
+                    <div class="nav-arrows">
+                        <div class="btn-group btn-group-xs" role="group"><a class="btn btn-default" href="Expressions.html" title="Expressions" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a><a class="btn btn-default" href="Expressions.html" title="Expressions" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="Constants.html" title="Constants" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
+                    </div>
+                </div> 
+            
+
+            <a id="main-content"></a>
+
+            <h2>Variables</h2>
+
+            <div class="main-content">
+                
+<p></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><a class="rvts66" href="https://www.tutorialspoint.com/r/r_variables.htm">https://www.tutorialspoint.com/r/r_variables.htm</a></p>
+<p class="rvps2"><span class="rvts66"><br/></span></p>
+<p class="rvps20"><span class="rvts54">A variable provides us with named storage that our programs can manipulate. A variable in R can store any R object. &nbsp;A valid variable name consists of letters, numbers and the dot or underline characters. The variable name starts with a letter or the dot not followed by a number.</span></p>
+<div class="rvps21"><table width="100%" border="1" cellpadding="1" cellspacing="2" style="border-width: 0px; background-color: #ffffff; border-spacing: 2px;">
+<tr valign="top">
+<td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">!variable</span></p>
+</td>
+<td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">refers to</span></p>
+</td>
+<td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">object</span></p>
+</td>
+<td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px;"><br/>
+</td>
+<td width="47" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px;"><br/>
+</td>
+<td width="45" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px;"><br/>
+</td>
+<td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px;"><br/>
+</td>
+<td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px;"><br/>
+</td>
+<td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px;"><br/>
+</td>
+<td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px;"><br/>
+</td>
+</tr>
+<tr valign="top">
+<td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">#</span></p>
+</td>
+<td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">has</span></p>
+</td>
+<td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">1 name/ a:symbol</span></p>
+</td>
+<td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px;"><br/>
+</td>
+<td width="47" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px;"><br/>
+</td>
+<td width="45" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px;"><br/>
+</td>
+<td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px;"><br/>
+</td>
+<td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px;"><br/>
+</td>
+<td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px;"><br/>
+</td>
+<td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px;"><br/>
+</td>
+</tr>
+<tr valign="top">
+<td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">#</span></p>
+</td>
+<td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">stores</span></p>
+</td>
+<td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">1 object</span></p>
+</td>
+<td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px;"><br/>
+</td>
+<td width="47" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px;"><br/>
+</td>
+<td width="45" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px;"><br/>
+</td>
+<td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px;"><br/>
+</td>
+<td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px;"><br/>
+</td>
+<td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px;"><br/>
+</td>
+<td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px;"><br/>
+</td>
+</tr>
+<tr valign="top">
+<td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">#</span></p>
+</td>
+<td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">to assign an object to a variable /use: assignment operator</span></p>
+</td>
+<td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6"><br/></span></p>
+</td>
+<td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px;"><br/>
+</td>
+<td width="47" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px;"><br/>
+</td>
+<td width="45" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px;"><br/>
+</td>
+<td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px;"><br/>
+</td>
+<td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px;"><br/>
+</td>
+<td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px;"><br/>
+</td>
+<td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px;"><br/>
+</td>
+</tr>
+<tr valign="top">
+<td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">#</span></p>
+</td>
+<td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">to delete a variable/use: rm</span></p>
+</td>
+<td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6"><br/></span></p>
+</td>
+<td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px;"><br/>
+</td>
+<td width="47" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px;"><br/>
+</td>
+<td width="45" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px;"><br/>
+</td>
+<td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px;"><br/>
+</td>
+<td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px;"><br/>
+</td>
+<td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px;"><br/>
+</td>
+<td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px;"><br/>
+</td>
+</tr>
+<tr valign="top">
+<td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">#</span></p>
+</td>
+<td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">to find a variable/use: ls</span></p>
+</td>
+<td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6"><br/></span></p>
+</td>
+<td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px;"><br/>
+</td>
+<td width="47" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px;"><br/>
+</td>
+<td width="45" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px;"><br/>
+</td>
+<td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px;"><br/>
+</td>
+<td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px;"><br/>
+</td>
+<td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px;"><br/>
+</td>
+<td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px;"><br/>
+</td>
+</tr>
+</table>
+</div>
+<p class="rvps2"><span class="rvts25"><br/></span></p>
+<p class="rvps2"><span class="rvts25">In every computer language </span><a name="index-variable"></a>
+<span class="rvts25">variables provide a means of accessing the data stored in memory. R does not provide direct access to the computer’s memory but rather provides a number of specialized data structures we will refer to as </span><a name="index-object"></a>
+<span class="rvts25">objects. These objects are referred to through symbols or variables. In R, however, the symbols are themselves objects and can be manipulated in the same way as any other object. This is different from many other languages and has wide ranging effects.</span></p>
+<h2 class="rvps21"><span class="rvts0"><span class="rvts56"><br/></span></span></h2>
+<div class="rvps39"><table width="500" border="1" cellpadding="8" cellspacing="-1" style="border-color: #dddddd; border-style: solid; border-collapse: collapse;">
+<tr valign="top">
+<td width="110" valign="top" style="border-color : #dddddd #dddddd #dddddd #dddddd; border-style: solid; padding: 8px; background-color: #eeeeee;"><p class="rvps2"><span class="rvts107">Variable Name</span></p>
+</td>
+<td valign="top" style="border-color : #dddddd #dddddd #dddddd #dddddd; border-style: solid; padding: 8px; background-color: #eeeeee;"><p class="rvps2"><span class="rvts107">Validity</span></p>
+</td>
+<td valign="top" style="border-color : #dddddd #dddddd #dddddd #dddddd; border-style: solid; padding: 8px; background-color: #eeeeee;"><p class="rvps2"><span class="rvts107">Reason</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td valign="top" style="border-color : #dddddd #dddddd #dddddd #dddddd; border-style: solid; padding: 8px;"><p class="rvps2"><span class="rvts108">var_name2.</span></p>
+</td>
+<td valign="top" style="border-color : #dddddd #dddddd #dddddd #dddddd; border-style: solid; padding: 8px;"><p class="rvps2"><span class="rvts108">valid</span></p>
+</td>
+<td valign="top" style="border-color : #dddddd #dddddd #dddddd #dddddd; border-style: solid; padding: 8px;"><p class="rvps2"><span class="rvts108">Has letters, numbers, dot and underscore</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td valign="top" style="border-color : #dddddd #dddddd #dddddd #dddddd; border-style: solid; padding: 8px;"><p class="rvps2"><span class="rvts108">var_name%</span></p>
+</td>
+<td valign="top" style="border-color : #dddddd #dddddd #dddddd #dddddd; border-style: solid; padding: 8px;"><p class="rvps2"><span class="rvts108">Invalid</span></p>
+</td>
+<td valign="top" style="border-color : #dddddd #dddddd #dddddd #dddddd; border-style: solid; padding: 8px;"><p class="rvps2"><span class="rvts108">Has the character '%'. Only dot(.) and underscore allowed.</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td valign="top" style="border-color : #dddddd #dddddd #dddddd #dddddd; border-style: solid; padding: 8px;"><p class="rvps2"><span class="rvts108">2var_name</span></p>
+</td>
+<td valign="top" style="border-color : #dddddd #dddddd #dddddd #dddddd; border-style: solid; padding: 8px;"><p class="rvps2"><span class="rvts108">invalid</span></p>
+</td>
+<td valign="top" style="border-color : #dddddd #dddddd #dddddd #dddddd; border-style: solid; padding: 8px;"><p class="rvps2"><span class="rvts108">Starts with a number</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td valign="top" style="border-color : #dddddd #dddddd #dddddd #dddddd; border-style: solid; padding: 8px;"><p class="rvps2"><span class="rvts108">.var_name ,</span><br/><span class="rvts108">var.name</span></p>
+</td>
+<td valign="top" style="border-color : #dddddd #dddddd #dddddd #dddddd; border-style: solid; padding: 8px;"><p class="rvps2"><span class="rvts108">valid</span></p>
+</td>
+<td valign="top" style="border-color : #dddddd #dddddd #dddddd #dddddd; border-style: solid; padding: 8px;"><p class="rvps2"><span class="rvts108">Can start with a dot(.) but the dot(.)should not be followed by a number.</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td valign="top" style="border-color : #dddddd #dddddd #dddddd #dddddd; border-style: solid; padding: 8px;"><p class="rvps2"><span class="rvts108">.2var_name</span></p>
+</td>
+<td valign="top" style="border-color : #dddddd #dddddd #dddddd #dddddd; border-style: solid; padding: 8px;"><p class="rvps2"><span class="rvts108">invalid</span></p>
+</td>
+<td valign="top" style="border-color : #dddddd #dddddd #dddddd #dddddd; border-style: solid; padding: 8px;"><p class="rvps2"><span class="rvts108">The starting dot is followed by a number making it invalid.</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td valign="top" style="border-color : #dddddd #dddddd #dddddd #dddddd; border-style: solid; padding: 8px;"><p class="rvps2"><span class="rvts108">_var_name</span></p>
+</td>
+<td valign="top" style="border-color : #dddddd #dddddd #dddddd #dddddd; border-style: solid; padding: 8px;"><p class="rvps2"><span class="rvts108">invalid</span></p>
+</td>
+<td valign="top" style="border-color : #dddddd #dddddd #dddddd #dddddd; border-style: solid; padding: 8px;"><p class="rvps2"><span class="rvts108">Starts with _ which is not valid</span></p>
+</td>
+</tr>
+</table>
+</div>
+<h2 class="rvps21"><span class="rvts0"><span class="rvts56">Variable Assignment</span></span></h2>
+<p class="rvps20"><span class="rvts54">The variables can be assigned values using leftward, rightward and equal to operator. The values of the variables can be printed using&nbsp;</span><span class="rvts55">print()</span><span class="rvts54">&nbsp;or&nbsp;</span><span class="rvts55">cat()</span><span class="rvts54">function. The&nbsp;</span><span class="rvts55">cat()</span><span class="rvts54">&nbsp;function combines multiple items into a continuous print output.</span></p>
+<p class="rvps22"><span class="rvts58"># Assignment using equal operator.</span><br/><span class="rvts62">var</span><span class="rvts60">.</span><span class="rvts61">1</span><span class="rvts59"> </span><span class="rvts60">=</span><span class="rvts59"> c</span><span class="rvts60">(</span><span class="rvts61">0</span><span class="rvts60">,</span><span class="rvts61">1</span><span class="rvts60">,</span><span class="rvts61">2</span><span class="rvts60">,</span><span class="rvts61">3</span><span class="rvts60">)</span><span class="rvts59"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><br/><span class="rvts58"># Assignment using leftward operator.</span><br/><span class="rvts62">var</span><span class="rvts60">.</span><span class="rvts61">2</span><span class="rvts59"> </span><span class="rvts60">&lt;-</span><span class="rvts59"> c</span><span class="rvts60">(</span><span class="rvts63">"learn"</span><span class="rvts60">,</span><span class="rvts63">"R"</span><span class="rvts60">)</span><span class="rvts59"> &nbsp; </span><br/><span class="rvts58"># Assignment using rightward operator. &nbsp; </span><br/><span class="rvts59">c</span><span class="rvts60">(</span><span class="rvts59">TRUE</span><span class="rvts60">,</span><span class="rvts61">1</span><span class="rvts60">)</span><span class="rvts59"> </span><span class="rvts60">-&gt;</span><span class="rvts59"> </span><span class="rvts62">var</span><span class="rvts60">.</span><span class="rvts61">3</span><span class="rvts59"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><br/><span class="rvts62">print</span><span class="rvts60">(</span><span class="rvts62">var</span><span class="rvts60">.</span><span class="rvts61">1</span><span class="rvts60">)</span><br/><span class="rvts59">cat </span><span class="rvts60">(</span><span class="rvts63">"var.1 is "</span><span class="rvts60">,</span><span class="rvts59"> </span><span class="rvts62">var</span><span class="rvts60">.</span><span class="rvts61">1</span><span class="rvts59"> </span><span class="rvts60">,</span><span class="rvts63">"\n"</span><span class="rvts60">)</span><br/><span class="rvts59">cat </span><span class="rvts60">(</span><span class="rvts63">"var.2 is "</span><span class="rvts60">,</span><span class="rvts59"> </span><span class="rvts62">var</span><span class="rvts60">.</span><span class="rvts61">2</span><span class="rvts59"> </span><span class="rvts60">,</span><span class="rvts63">"\n"</span><span class="rvts60">)</span><br/><span class="rvts59">cat </span><span class="rvts60">(</span><span class="rvts63">"var.3 is "</span><span class="rvts60">,</span><span class="rvts59"> </span><span class="rvts62">var</span><span class="rvts60">.</span><span class="rvts61">3</span><span class="rvts59"> </span><span class="rvts60">,</span><span class="rvts63">"\n"</span><span class="rvts60">)</span></p>
+<p class="rvps20"><span class="rvts54">When we execute the above code, it produces the following result −</span></p>
+<p class="rvps23"><span class="rvts57">[1] 0 1 2 3</span><br/><span class="rvts57">var.1 is &nbsp;0 1 2 3 </span><br/><span class="rvts57">var.2 is &nbsp;learn R </span><br/><span class="rvts57">var.3 is &nbsp;1 1 </span></p>
+<p class="rvps20"><span class="rvts55">Note</span><span class="rvts54">&nbsp;− The vector c(TRUE,1) has a mix of logical and numeric class. So logical class is coerced to numeric class making TRUE as 1.</span></p>
+<h2 class="rvps21"><span class="rvts0"><span class="rvts56">Data Type of a Variable</span></span></h2>
+<p class="rvps20"><span class="rvts54">In R, a variable itself is not declared of any data type, rather it gets the data type of the R - object assigned to it. So R is called a dynamically typed language, which means that we can change a variable’s data type of the same variable again and again when using it in a program.</span></p>
+<p class="rvps22"><span class="rvts59">var_x </span><span class="rvts60">&lt;-</span><span class="rvts59"> </span><span class="rvts63">"Hello"</span><br/><span class="rvts59">cat</span><span class="rvts60">(</span><span class="rvts63">"The class of var_x is "</span><span class="rvts60">,</span><span class="rvts62">class</span><span class="rvts60">(</span><span class="rvts59">var_x</span><span class="rvts60">),</span><span class="rvts63">"\n"</span><span class="rvts60">)</span><br/><span class="rvts59">var_x </span><span class="rvts60">&lt;-</span><span class="rvts59"> </span><span class="rvts61">34.5</span><br/><span class="rvts59">cat</span><span class="rvts60">(</span><span class="rvts63">" &nbsp;Now the class of var_x is "</span><span class="rvts60">,</span><span class="rvts62">class</span><span class="rvts60">(</span><span class="rvts59">var_x</span><span class="rvts60">),</span><span class="rvts63">"\n"</span><span class="rvts60">)</span><br/><span class="rvts59">var_x </span><span class="rvts60">&lt;-</span><span class="rvts59"> </span><span class="rvts61">27L</span><br/><span class="rvts59">cat</span><span class="rvts60">(</span><span class="rvts63">" &nbsp; Next the class of var_x becomes "</span><span class="rvts60">,</span><span class="rvts62">class</span><span class="rvts60">(</span><span class="rvts59">var_x</span><span class="rvts60">),</span><span class="rvts63">"\n"</span><span class="rvts60">)</span></p>
+<p class="rvps20"><span class="rvts54">When we execute the above code, it produces the following result −</span></p>
+<p class="rvps23"><span class="rvts57">The class of var_x is &nbsp;character </span><br/><span class="rvts57"> &nbsp; Now the class of var_x is &nbsp;numeric </span><br/><span class="rvts57"> &nbsp; &nbsp; &nbsp;Next the class of var_x becomes &nbsp;integer</span></p>
+<h2 class="rvps21"><span class="rvts0"><span class="rvts56">Finding Variables</span></span></h2>
+<p class="rvps20"><span class="rvts54">To know all the variables currently available in the workspace we use the&nbsp;</span><span class="rvts55">ls()</span><span class="rvts54">&nbsp;function. Also the ls() function can use patterns to match the variable names.</span></p>
+<p class="rvps22"><span class="rvts62">print</span><span class="rvts60">(</span><span class="rvts59">ls</span><span class="rvts60">())</span></p>
+<p class="rvps20"><span class="rvts54">When we execute the above code, it produces the following result −</span></p>
+<p class="rvps23"><span class="rvts57">[1] "my var" &nbsp; &nbsp; "my_new_var" "my_var" &nbsp; &nbsp; "var.1" &nbsp; &nbsp; &nbsp;</span><br/><span class="rvts57">[5] "var.2" &nbsp; &nbsp; &nbsp;"var.3" &nbsp; &nbsp; &nbsp;"var.name" &nbsp; "var_name2."</span><br/><span class="rvts57">[9] "var_x" &nbsp; &nbsp; &nbsp;"varname" </span></p>
+<p class="rvps20"><span class="rvts55">Note</span><span class="rvts54">&nbsp;− It is a sample output depending on what variables are declared in your environment.</span></p>
+<p class="rvps20"><span class="rvts54">The ls() function can use patterns to match the variable names.</span></p>
+<p class="rvps22"><span class="rvts58"># List the variables starting with the pattern "var".</span><br/><span class="rvts62">print</span><span class="rvts60">(</span><span class="rvts59">ls</span><span class="rvts60">(</span><span class="rvts59">pattern </span><span class="rvts60">=</span><span class="rvts59"> </span><span class="rvts63">"var"</span><span class="rvts60">))</span><span class="rvts59"> &nbsp; </span></p>
+<p class="rvps20"><span class="rvts54">When we execute the above code, it produces the following result −</span></p>
+<p class="rvps23"><span class="rvts57">[1] "my var" &nbsp; &nbsp; "my_new_var" "my_var" &nbsp; &nbsp; "var.1" &nbsp; &nbsp; &nbsp;</span><br/><span class="rvts57">[5] "var.2" &nbsp; &nbsp; &nbsp;"var.3" &nbsp; &nbsp; &nbsp;"var.name" &nbsp; "var_name2."</span><br/><span class="rvts57">[9] "var_x" &nbsp; &nbsp; &nbsp;"varname" &nbsp; &nbsp;</span></p>
+<p class="rvps20"><span class="rvts54">The variables starting with&nbsp;</span><span class="rvts55">dot(.)</span><span class="rvts54">&nbsp;are hidden, they can be listed using "all.names = TRUE" argument to ls() function.</span></p>
+<p class="rvps22"><span class="rvts62">print</span><span class="rvts60">(</span><span class="rvts59">ls</span><span class="rvts60">(</span><span class="rvts59">all</span><span class="rvts60">.</span><span class="rvts59">name </span><span class="rvts60">=</span><span class="rvts59"> TRUE</span><span class="rvts60">))</span></p>
+<p class="rvps20"><span class="rvts54">When we execute the above code, it produces the following result −</span></p>
+<p class="rvps23"><span class="rvts57">[1] ".cars" &nbsp; &nbsp; &nbsp; &nbsp;".Random.seed" ".var_name" &nbsp; &nbsp;".varname" &nbsp; &nbsp; ".varname2" &nbsp; </span><br/><span class="rvts57">[6] "my var" &nbsp; &nbsp; &nbsp; "my_new_var" &nbsp; "my_var" &nbsp; &nbsp; &nbsp; "var.1" &nbsp; &nbsp; &nbsp; &nbsp;"var.2" &nbsp; &nbsp; &nbsp; &nbsp;</span><br/><span class="rvts57">[11]"var.3" &nbsp; &nbsp; &nbsp; &nbsp;"var.name" &nbsp; &nbsp; "var_name2." &nbsp; "var_x" &nbsp;</span></p>
+<h2 class="rvps21"><span class="rvts0"><span class="rvts57"><br/></span></span></h2>
+<h2 class="rvps21"><span class="rvts0"><span class="rvts56">Deleting Variables</span></span></h2>
+<p class="rvps20"><span class="rvts54">Variables can be deleted by using the&nbsp;</span><span class="rvts55">rm()</span><span class="rvts54">&nbsp;function. Below we delete the variable var.3. On printing the value of the variable error is thrown.</span></p>
+<p class="rvps22"><span class="rvts59">rm</span><span class="rvts60">(</span><span class="rvts62">var</span><span class="rvts60">.</span><span class="rvts61">3</span><span class="rvts60">)</span><br/><span class="rvts62">print</span><span class="rvts60">(</span><span class="rvts62">var</span><span class="rvts60">.</span><span class="rvts61">3</span><span class="rvts60">)</span></p>
+<p class="rvps20"><span class="rvts54">When we execute the above code, it produces the following result −</span></p>
+<p class="rvps23"><span class="rvts57">[1] "var.3"</span><br/><span class="rvts57">Error in print(var.3) : object 'var.3' not found</span></p>
+<p class="rvps20"><span class="rvts54">All the variables can be deleted by using the&nbsp;</span><span class="rvts55">rm()</span><span class="rvts54">&nbsp;and&nbsp;</span><span class="rvts55">ls()</span><span class="rvts54">&nbsp;function together.</span></p>
+<p class="rvps22"><span class="rvts59">rm</span><span class="rvts60">(</span><span class="rvts59">list </span><span class="rvts60">=</span><span class="rvts59"> ls</span><span class="rvts60">())</span><br/><span class="rvts62">print</span><span class="rvts60">(</span><span class="rvts59">ls</span><span class="rvts60">())</span></p>
+<p class="rvps20"><span class="rvts54">When we execute the above code, it produces the following result −</span></p>
+<p class="rvps23"><span class="rvts57">character(0)</span></p>
+<p class="rvps23"><span class="rvts57"><br/></span></p>
+<p></p>
+<p class="rvps4" style="clear: both;"><span class="rvts18">Created with the Personal Edition of HelpNDoc: </span><a class="rvts19" href="https://www.helpndoc.com">Free EBook and documentation generator</a></p>
+
+            </div>
+            
+            <div id="topic_footer"><div id="topic_footer_content">Copyright &copy; &lt;Dates&gt; by &lt;Authors&gt;. All Rights Reserved.</div></div>
+        </div>  <!-- /#topic-content -->
+    </article>
+
+    <footer></footer>
+
+  </div>  <!-- /#main -->
+
+  <div class="mask" data-toggle="sm-nav-expanded"></div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="hndModal" tabindex="-1" role="dialog" aria-labelledby="hndModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="hndModalLabel"></h4>
+        </div>
+        <div class="modal-body">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary modal-btn-close" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="vendors/jquery-1.11.3/jquery.min.js"></script>
+  <script src="vendors/bootstrap-3.3.6/js/bootstrap.min.js"></script>
+  <script src="vendors/fastclick-1.0.6/fastclick.min.js"></script>
+  <script src="vendors/markjs-8.8.3/jquery.mark.min.js"></script>
+  <script src="vendors/uri-1.18.9/uri.min.js"></script>
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <script src="vendors/bootstrap-3.3.6/js/ie10-viewport-bug-workaround.js"></script>
+  
+  <!-- Headroom -->
+  <script src="vendors/headroom-0.9.3/headroom.min.js"></script>
+  <script src="vendors/headroom-0.9.3/jquery.headroom.min.js"></script>
+
+  <!-- JsTree -->
+  <script src="vendors/jstree-3.3.2/jstree.min.js"></script>
+
+  <!-- HelpNDoc scripts -->
+  <script src="_translations.js"></script>
+  <script src="js/hndsd.min.js"></script>
+  <script src="js/hndse.min.js"></script>
+  <script src="js/app.min.js"></script>
+
+  <!-- Scripts -->
+  <script>
+    $(function() {
+      // Instanciate FastClick
+      Origami.fastclick(document.body);
+      // Create the app
+      var app = new Hnd.App();
+      // Update translations
+      hnd_ut(app);
+	  // Custom JS
+	  
+      // Boot the app
+      app.Boot();
+    });
+  </script>
+
+
+
+</body>
+
+</html>
+

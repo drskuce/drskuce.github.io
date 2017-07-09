@@ -1,0 +1,465 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="generator" content="HelpNDoc Personal Edition 5.2.0.265">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="favicon.ico"/>
+
+  <title>Data Frames</title>
+  <meta name="description" content="tyetyurtyurtyurtyurtyurtyurtu" /> 
+  <meta name="keywords" content="New keyword">
+
+
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Data Frames">
+  <meta name="twitter:description" content="tyetyurtyurtyurtyurtyurtyurtu">
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="Data Frames" />
+  <meta property="og:type" content="article" />
+  <meta property="og:description" content="tyetyurtyurtyurtyurtyurtyurtu" />
+  <meta property="og:site_name" content="R Knowledge Base" /> 
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendors/bootstrap-3.3.6/css/bootstrap.min.css" rel="stylesheet"/>
+
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <link href="vendors/bootstrap-3.3.6/css/ie10-viewport-bug-workaround.css" rel="stylesheet"/>
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+      <script src="vendors/html5shiv-3.7.2/html5shiv.min.js"></script>
+      <script src="vendors/respond-1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  <!-- JsTree styles -->
+  <link href="vendors/jstree-3.3.2/themes/default/style.min.css" rel="stylesheet"/>
+
+  <!-- Hnd styles -->
+  <link href="css/layout.min.css" rel="stylesheet" />
+  <link href="css/effects.min.css" rel="stylesheet" />
+  <link href="css/theme-light-blue.min.css" rel="stylesheet" />
+  <link href="css/print.min.css" rel="stylesheet" media="print" />
+  <style type="text/css">nav { width: 350px} @media screen and (min-width:769px) { body.md-nav-expanded #main { margin-left: 350px} body.md-nav-expanded header { padding-left: 364px} }</style>
+
+  <!-- Content style -->
+  <link href="css/hnd.content.css" rel="stylesheet" />
+
+  
+
+
+
+</head>
+
+<body class="md-nav-expanded">
+
+
+
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible">Skip to main content</a>
+  </div>
+
+  <header class="headroom">
+    <button class="hnd-toggle btn btn-default">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>        
+    </button>
+    <h1>R Knowledge Base</h1>
+    
+  </header>
+
+  <nav class="md-nav-expanded">
+    <!-- Nav tabs -->
+    <ul class="tab-tabs nav nav-tabs" role="tablist">
+      <li id="nav-close"> 
+        <button class="hnd-toggle btn btn-default">
+          <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+        </button>
+      </li>
+      
+	  
+        <li role="presentation" class="tab active">
+            <a href="#contents" aria-controls="contents" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-list"></i>
+                Contents
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#index" aria-controls="index" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-asterisk"></i>
+                Index
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#search" aria-controls="search" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-search"></i>
+                Search
+            </a>
+        </li>
+      
+    </ul>  <!-- /Nav tabs -->
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+	  
+      <div role="tabpanel" class="tab-pane active" id="contents">
+        <div id="toc" class="tree-container unselectable"
+            data-url="_toc.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /contents-->
+      
+      <div role="tabpanel" class="tab-pane" id="index">
+        <div id="keywords" class="tree-container unselectable"
+            data-url="_keywords.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /index-->
+      
+      <div role="tabpanel" class="tab-pane" id="search">
+        <div class="search-content">
+          <div class="search-input">
+            <form id="search-form">
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="input-search" name="input-search" placeholder="Search..." />
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit">
+                      <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </form>
+          </div>  <!-- /search-input -->
+          <div class="search-result">
+            <div id="search-info"></div>
+            <div class="tree-container unselectable" id="search-tree"></div>
+          </div>  <!-- /search-result -->
+        </div>  <!-- /search-content -->
+      </div>  <!-- /search-->
+      
+    </div>  <!-- /Tab panes -->
+
+  </nav>
+
+  <div id="main">
+
+    <article>
+        <div id="topic-content" class="container-fluid" 
+		  data-hnd-id="DataFrames"
+		  data-hnd-context="19"
+		  data-hnd-title="Data Frames"
+		>
+            
+                <div class="navigation">
+                    <ol class="breadcrumb">
+                        <li><a href="RConcepts.html">R Concepts</a></li><li><a href="Objects.html">Objects</a></li><li><a href="Lists.html">Lists</a></li>
+                    </ol>
+                    <div class="nav-arrows">
+                        <div class="btn-group btn-group-xs" role="group"><a class="btn btn-default" href="Lists.html" title="Lists" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a><a class="btn btn-default" href="Lists.html" title="Lists" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="Symbols1.html" title="Symbols" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
+                    </div>
+                </div> 
+            
+
+            <a id="main-content"></a>
+
+            <h2>Data Frames</h2>
+
+            <div class="main-content">
+                
+<p></p>
+<p class="rvps13"><a class="rvts43" href="https://cran.r-project.org/doc/manuals/r-release/R-intro.html#Data-frames">https://cran.r-project.org/doc/manuals/r-release/R-intro.html#Data-frames</a></p>
+<p class="rvps32"><span class="rvts22">data frames:</span><span class="rvts16"> matrix-like structures with columns of possibly different type/mode/attributes; comparable in form and function to SAS datasets. More precisely: lists of class </span><span class="rvts24">data.frame</span><span class="rvts16"> (note the effect of unclass()!), built of (numeric, character or logical) vectors, factors, (numeric) matrices, lists and/or data frames of the same length. The columns are implemented as list components. Data frames usually have a names attribute for the variables (columns) and a row.names attribute for the cases (rows). See also „Indexing“ below. </span></p>
+<p class="rvps32"><span class="rvts22"><br/></span></p>
+<p class="rvps32"><span class="rvts91"><br/></span></p>
+<div class="rvps35"><table border="1" cellpadding="4" cellspacing="-1" style="border-width: 0px; border-collapse: collapse;">
+<tr valign="top">
+<td width="107" valign="top" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px;"><p class="rvps33"><span class="rvts91">!data frame</span></p>
+</td>
+<td width="84" valign="top" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px;"><p class="rvps33"><span class="rvts91">isako</span></p>
+</td>
+<td width="107" valign="top" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px;"><p class="rvps33"><span class="rvts91">list/of: columns</span></p>
+</td>
+<td width="96" valign="top" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px;"><p class="rvps33"><span class="rvts91"><br/></span></p>
+</td>
+<td width="1" valign="top" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px;"><p class="rvps33"><span class="rvts91"><br/></span></p>
+</td>
+<td width="71" valign="top" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px;"><p class="rvps33"><span class="rvts91"><br/></span></p>
+</td>
+<td width="71" valign="top" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px;"><p class="rvps33"><span class="rvts91"><br/></span></p>
+</td>
+<td width="71" valign="top" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px;"><p class="rvps33"><span class="rvts91"><br/></span></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="107" valign="top" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px;"><p class="rvps33"><span class="rvts91">data frame</span></p>
+</td>
+<td width="84" valign="top" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px;"><p class="rvps33"><span class="rvts91">is similar to</span></p>
+</td>
+<td width="107" valign="top" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px;"><p class="rvps33"><span class="rvts91">matrix</span></p>
+</td>
+<td width="96" valign="top" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px;"><p class="rvps33"><span class="rvts91"><br/></span></p>
+</td>
+<td width="1" valign="top" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px;"><p class="rvps33"><span class="rvts91"><br/></span></p>
+</td>
+<td width="71" valign="top" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px;"><p class="rvps33"><span class="rvts91"><br/></span></p>
+</td>
+<td width="71" valign="top" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px;"><p class="rvps33"><span class="rvts91"><br/></span></p>
+</td>
+<td width="71" valign="top" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px;"><p class="rvps33"><span class="rvts91"><br/></span></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="107" valign="top" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px;"><p class="rvps33"><span class="rvts91">data frame</span></p>
+</td>
+<td width="84" valign="top" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px;"><p class="rvps33"><span class="rvts91">has </span></p>
+</td>
+<td width="107" valign="top" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px;"><p class="rvps33"><span class="rvts91">2 dimensions</span></p>
+</td>
+<td width="96" valign="top" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px;"><p class="rvps33"><span class="rvts91"><br/></span></p>
+</td>
+<td width="1" valign="top" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px;"><p class="rvps33"><span class="rvts91"><br/></span></p>
+</td>
+<td width="71" valign="top" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px;"><p class="rvps33"><span class="rvts91"><br/></span></p>
+</td>
+<td width="71" valign="top" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px;"><p class="rvps33"><span class="rvts91"><br/></span></p>
+</td>
+<td width="71" valign="top" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px;"><p class="rvps33"><span class="rvts91"><br/></span></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="107" valign="top" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px;"><p class="rvps33"><span class="rvts91">column of a #</span></p>
+</td>
+<td width="84" valign="top" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px;"><p class="rvps33"><span class="rvts91">has</span></p>
+</td>
+<td width="107" valign="top" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px;"><p class="rvps33"><span class="rvts91">1 type</span></p>
+</td>
+<td width="96" valign="top" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px;"><p class="rvps33"><span class="rvts91"><br/></span></p>
+</td>
+<td width="1" valign="top" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px;"><p class="rvps33"><span class="rvts91"><br/></span></p>
+</td>
+<td width="71" valign="top" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px;"><p class="rvps33"><span class="rvts91"><br/></span></p>
+</td>
+<td width="71" valign="top" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px;"><p class="rvps33"><span class="rvts91"><br/></span></p>
+</td>
+<td width="71" valign="top" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px;"><p class="rvps33"><span class="rvts91"><br/></span></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="107" valign="top" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px;"><p class="rvps33"><span class="rvts91">column</span></p>
+</td>
+<td width="84" valign="top" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px;"><p class="rvps33"><span class="rvts91">isako</span></p>
+</td>
+<td width="107" valign="top" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px;"><p class="rvps33"><span class="rvts91">atomic vector</span></p>
+</td>
+<td width="96" valign="top" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px;"><p class="rvps33"><span class="rvts91"><br/></span></p>
+</td>
+<td width="1" valign="top" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px;"><p class="rvps33"><span class="rvts91"><br/></span></p>
+</td>
+<td width="71" valign="top" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px;"><p class="rvps33"><span class="rvts91"><br/></span></p>
+</td>
+<td width="71" valign="top" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px;"><p class="rvps33"><span class="rvts91"><br/></span></p>
+</td>
+<td width="71" valign="top" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px;"><p class="rvps33"><span class="rvts91"><br/></span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="rvps34"><span class="rvts91"><br/></span></p>
+<p class="rvps13"><span class="rvts86">A&nbsp;</span><span class="rvts88">data frame</span><span class="rvts86">&nbsp;is a list with class&nbsp;</span><span class="rvts90">"data.frame"</span><span class="rvts86">. There are restrictions on lists that may be made into data frames, namely</span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: disc;">
+<li class="rvps31"><span class="rvts86">The components must be vectors (numeric, character, or logical), factors, numeric matrices, lists, or other data frames.</span></li>
+<li class="rvps31"><span class="rvts86">Matrices, lists, and data frames provide as many variables to the new data frame as they have columns, elements, or variables, respectively.</span></li>
+<li class="rvps31"><a name="DOCF18"></a>
+<span class="rvts86">Numeric vectors, logicals and factors are included as is, and by default</span><a class="rvts89" href="https://cran.r-project.org/doc/manuals/r-release/R-intro.html#FOOT18">18</a><span class="rvts86">&nbsp;character vectors are coerced to be factors, whose levels are the unique values appearing in the vector.</span></li>
+<li class="rvps31"><span class="rvts86">Vector structures appearing as variables of the data frame must all have the&nbsp;</span><span class="rvts88">same length</span><span class="rvts86">, and matrix structures must all have the same&nbsp;</span><span class="rvts88">row size</span><span class="rvts86">.</span></li>
+</ul>
+<p class="rvps13"><span class="rvts86">A data frame may for many purposes be regarded as a matrix with columns possibly of differing modes and attributes. It may be displayed in matrix form, and its rows and columns extracted using matrix indexing conventions.</span></p>
+<div class="rvps2"><table border="0" cellpadding="1" cellspacing="0" style="border-width: 0px; border-spacing: 0px;">
+<tr valign="top">
+<td valign="top" style="padding: 1px;"><p class="rvps2"><span class="rvts86">•&nbsp;</span><a class="rvts31" href="https://cran.r-project.org/doc/manuals/r-release/R-intro.html#Making-data-frames">Making data frames</a><span class="rvts86">:</span></p>
+</td>
+<td valign="middle" style="padding: 1px;"><p class="rvps2"><span class="rvts86">&nbsp;&nbsp;</span></p>
+</td>
+<td valign="top" style="padding: 1px;"><p class="rvps2"><span class="rvts11"><br/></span></p>
+</td>
+</tr>
+<tr valign="top">
+<td valign="top" style="padding: 1px;"><p class="rvps2"><span class="rvts86">•&nbsp;</span><a class="rvts31" href="https://cran.r-project.org/doc/manuals/r-release/R-intro.html#attach_0028_0029-and-detach_0028_0029">attach() and detach()</a><span class="rvts86">:</span></p>
+</td>
+<td valign="middle" style="padding: 1px;"><p class="rvps2"><span class="rvts86">&nbsp;&nbsp;</span></p>
+</td>
+<td valign="top" style="padding: 1px;"><p class="rvps2"><span class="rvts11"><br/></span></p>
+</td>
+</tr>
+<tr valign="top">
+<td valign="top" style="padding: 1px;"><p class="rvps2"><span class="rvts86">•&nbsp;</span><a class="rvts31" href="https://cran.r-project.org/doc/manuals/r-release/R-intro.html#Working-with-data-frames">Working with data frames</a><span class="rvts86">:</span></p>
+</td>
+<td valign="middle" style="padding: 1px;"><p class="rvps2"><span class="rvts86">&nbsp;&nbsp;</span></p>
+</td>
+<td valign="top" style="padding: 1px;"><p class="rvps2"><span class="rvts11"><br/></span></p>
+</td>
+</tr>
+<tr valign="top">
+<td valign="top" style="padding: 1px;"><p class="rvps2"><span class="rvts86">•&nbsp;</span><a class="rvts31" href="https://cran.r-project.org/doc/manuals/r-release/R-intro.html#Attaching-arbitrary-lists">Attaching arbitrary lists</a><span class="rvts86">:</span></p>
+</td>
+<td valign="middle" style="padding: 1px;"><p class="rvps2"><span class="rvts86">&nbsp;&nbsp;</span></p>
+</td>
+<td valign="top" style="padding: 1px;"><p class="rvps2"><span class="rvts11"><br/></span></p>
+</td>
+</tr>
+<tr valign="top">
+<td valign="top" style="padding: 1px;"><p class="rvps2"><span class="rvts86">•&nbsp;</span><a class="rvts31" href="https://cran.r-project.org/doc/manuals/r-release/R-intro.html#Managing-the-search-path">Managing the search path</a><span class="rvts86">:</span></p>
+</td>
+<td valign="middle" style="padding: 1px;"><p class="rvps2"><span class="rvts86">&nbsp;</span></p>
+</td>
+<td style="padding: 1px;"><p class="rvps2"><span class="rvts11"><br/></span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="rvps20"><span class="rvts87"><br/></span></p>
+<p class="rvps20"><span class="rvts54"><br/></span></p>
+<p class="rvps20"><span class="rvts54"><br/></span></p>
+<p class="rvps20"><span class="rvts54"><br/></span></p>
+<hr style="height: 1px; color : #000000;  background-color : #000000; border-width : 0px;">
+<p class="rvps20"><a class="rvts85" href="https://www.tutorialspoint.com/r/r_data_frames.htm">https://www.tutorialspoint.com/r/r_data_frames.htm</a></p>
+<p class="rvps20"><span class="rvts54">A data frame is a table or a two-dimensional array-like structure in which each column contains values of one variable and each row contains one set of values from each column.</span></p>
+<p class="rvps20"><span class="rvts54">Following are the characteristics of a data frame.</span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside;">
+<li style="margin-left: 0px" class="rvps30"><span class="rvts54">The column names should be non-empty.</span></li>
+<li style="margin-left: 0px" class="rvps30"><span class="rvts54">The row names should be unique.</span></li>
+<li style="margin-left: 0px" class="rvps30"><span class="rvts54">The data stored in a data frame can be of numeric, factor or character type.</span></li>
+<li style="margin-left: 0px" class="rvps30"><span class="rvts54">Each column should contain same number of data items.</span></li>
+</ul>
+<h2 class="rvps21"><span class="rvts0"><span class="rvts56">Create Data Frame</span></span></h2>
+<p class="rvps22"><span class="rvts58"># Create the data frame.</span><br/><span class="rvts59">emp</span><span class="rvts60">.</span><span class="rvts59">data </span><span class="rvts60">&lt;-</span><span class="rvts59"> data</span><span class="rvts60">.</span><span class="rvts59">frame</span><span class="rvts60">(</span><br/><span class="rvts59"> &nbsp; emp_id </span><span class="rvts60">=</span><span class="rvts59"> c </span><span class="rvts60">(</span><span class="rvts61">1</span><span class="rvts60">:</span><span class="rvts61">5</span><span class="rvts60">),</span><span class="rvts59"> </span><br/><span class="rvts59"> &nbsp; emp_name </span><span class="rvts60">=</span><span class="rvts59"> c</span><span class="rvts60">(</span><span class="rvts63">"Rick"</span><span class="rvts60">,</span><span class="rvts63">"Dan"</span><span class="rvts60">,</span><span class="rvts63">"Michelle"</span><span class="rvts60">,</span><span class="rvts63">"Ryan"</span><span class="rvts60">,</span><span class="rvts63">"Gary"</span><span class="rvts60">),</span><br/><span class="rvts59"> &nbsp; salary </span><span class="rvts60">=</span><span class="rvts59"> c</span><span class="rvts60">(</span><span class="rvts61">623.3</span><span class="rvts60">,</span><span class="rvts61">515.2</span><span class="rvts60">,</span><span class="rvts61">611.0</span><span class="rvts60">,</span><span class="rvts61">729.0</span><span class="rvts60">,</span><span class="rvts61">843.25</span><span class="rvts60">),</span><span class="rvts59"> </span><br/><span class="rvts59"> &nbsp; </span><br/><span class="rvts59"> &nbsp; start_date </span><span class="rvts60">=</span><span class="rvts59"> </span><span class="rvts62">as</span><span class="rvts60">.</span><span class="rvts83">Date</span><span class="rvts60">(</span><span class="rvts59">c</span><span class="rvts60">(</span><span class="rvts63">"2012-01-01"</span><span class="rvts60">,</span><span class="rvts59"> </span><span class="rvts63">"2013-09-23"</span><span class="rvts60">,</span><span class="rvts59"> </span><span class="rvts63">"2014-11-15"</span><span class="rvts60">,</span><span class="rvts59"> </span><span class="rvts63">"2014-05-11"</span><span class="rvts60">,</span><br/><span class="rvts59"> &nbsp; &nbsp; &nbsp;</span><span class="rvts63">"2015-03-27"</span><span class="rvts60">)),</span><br/><span class="rvts59"> &nbsp; stringsAsFactors </span><span class="rvts60">=</span><span class="rvts59"> FALSE</span><br/><span class="rvts60">)</span><br/><span class="rvts58"># Print the data frame. &nbsp; </span><br/><span class="rvts62">print</span><span class="rvts60">(</span><span class="rvts59">emp</span><span class="rvts60">.</span><span class="rvts59">data</span><span class="rvts60">)</span><span class="rvts59"> </span></p>
+<p class="rvps20"><span class="rvts54">When we execute the above code, it produces the following result −</span></p>
+<p class="rvps23"><span class="rvts57"> emp_id &nbsp; &nbsp;emp_name &nbsp; &nbsp; salary &nbsp; &nbsp; start_date</span><br/><span class="rvts57">1 &nbsp; &nbsp; 1 &nbsp; &nbsp; Rick &nbsp; &nbsp; &nbsp; &nbsp;623.30 &nbsp; &nbsp; 2012-01-01</span><br/><span class="rvts57">2 &nbsp; &nbsp; 2 &nbsp; &nbsp; Dan &nbsp; &nbsp; &nbsp; &nbsp; 515.20 &nbsp; &nbsp; 2013-09-23</span><br/><span class="rvts57">3 &nbsp; &nbsp; 3 &nbsp; &nbsp; Michelle &nbsp; &nbsp;611.00 &nbsp; &nbsp; 2014-11-15</span><br/><span class="rvts57">4 &nbsp; &nbsp; 4 &nbsp; &nbsp; Ryan &nbsp; &nbsp; &nbsp; &nbsp;729.00 &nbsp; &nbsp; 2014-05-11</span><br/><span class="rvts57">5 &nbsp; &nbsp; 5 &nbsp; &nbsp; Gary &nbsp; &nbsp; &nbsp; &nbsp;843.25 &nbsp; &nbsp; 2015-03-27</span></p>
+<h2 class="rvps21"><span class="rvts0"><span class="rvts56">Get the Structure of the Data Frame</span></span></h2>
+<p class="rvps20"><span class="rvts54">The structure of the data frame can be seen by using&nbsp;</span><span class="rvts55">str()</span><span class="rvts54">&nbsp;function.</span></p>
+<p class="rvps22"><span class="rvts58"># Create the data frame.</span><br/><span class="rvts59">emp</span><span class="rvts60">.</span><span class="rvts59">data </span><span class="rvts60">&lt;-</span><span class="rvts59"> data</span><span class="rvts60">.</span><span class="rvts59">frame</span><span class="rvts60">(</span><br/><span class="rvts59"> &nbsp; emp_id </span><span class="rvts60">=</span><span class="rvts59"> c </span><span class="rvts60">(</span><span class="rvts61">1</span><span class="rvts60">:</span><span class="rvts61">5</span><span class="rvts60">),</span><span class="rvts59"> </span><br/><span class="rvts59"> &nbsp; emp_name </span><span class="rvts60">=</span><span class="rvts59"> c</span><span class="rvts60">(</span><span class="rvts63">"Rick"</span><span class="rvts60">,</span><span class="rvts63">"Dan"</span><span class="rvts60">,</span><span class="rvts63">"Michelle"</span><span class="rvts60">,</span><span class="rvts63">"Ryan"</span><span class="rvts60">,</span><span class="rvts63">"Gary"</span><span class="rvts60">),</span><br/><span class="rvts59"> &nbsp; salary </span><span class="rvts60">=</span><span class="rvts59"> c</span><span class="rvts60">(</span><span class="rvts61">623.3</span><span class="rvts60">,</span><span class="rvts61">515.2</span><span class="rvts60">,</span><span class="rvts61">611.0</span><span class="rvts60">,</span><span class="rvts61">729.0</span><span class="rvts60">,</span><span class="rvts61">843.25</span><span class="rvts60">),</span><span class="rvts59"> </span><br/><span class="rvts59"> &nbsp; </span><br/><span class="rvts59"> &nbsp; start_date </span><span class="rvts60">=</span><span class="rvts59"> </span><span class="rvts62">as</span><span class="rvts60">.</span><span class="rvts83">Date</span><span class="rvts60">(</span><span class="rvts59">c</span><span class="rvts60">(</span><span class="rvts63">"2012-01-01"</span><span class="rvts60">,</span><span class="rvts59"> </span><span class="rvts63">"2013-09-23"</span><span class="rvts60">,</span><span class="rvts59"> </span><span class="rvts63">"2014-11-15"</span><span class="rvts60">,</span><span class="rvts59"> </span><span class="rvts63">"2014-05-11"</span><span class="rvts60">,</span><br/><span class="rvts59"> &nbsp; &nbsp; &nbsp;</span><span class="rvts63">"2015-03-27"</span><span class="rvts60">)),</span><br/><span class="rvts59"> &nbsp; stringsAsFactors </span><span class="rvts60">=</span><span class="rvts59"> FALSE</span><br/><span class="rvts60">)</span><br/><span class="rvts58"># Get the structure of the data frame.</span><br/><span class="rvts59">str</span><span class="rvts60">(</span><span class="rvts59">emp</span><span class="rvts60">.</span><span class="rvts59">data</span><span class="rvts60">)</span></p>
+<p class="rvps20"><span class="rvts54">When we execute the above code, it produces the following result −</span></p>
+<p class="rvps23"><span class="rvts57">'data.frame': &nbsp; 5 obs. of &nbsp;4 variables:</span><br/><span class="rvts57"> $ emp_id &nbsp; &nbsp;: int &nbsp;1 2 3 4 5</span><br/><span class="rvts57"> $ emp_name &nbsp;: chr &nbsp;"Rick" "Dan" "Michelle" "Ryan" ...</span><br/><span class="rvts57"> $ salary &nbsp; &nbsp;: num &nbsp;623 515 611 729 843</span><br/><span class="rvts57"> $ start_date: Date, format: "2012-01-01" "2013-09-23" "2014-11-15" "2014-05-11" ...</span></p>
+<h2 class="rvps21"><span class="rvts0"><span class="rvts56">Summary of Data in Data Frame</span></span></h2>
+<p class="rvps20"><span class="rvts54">The statistical summary and nature of the data can be obtained by applying&nbsp;</span><span class="rvts55">summary()</span><span class="rvts54">&nbsp;function.</span></p>
+<p class="rvps22"><span class="rvts58"># Create the data frame.</span><br/><span class="rvts59">emp</span><span class="rvts60">.</span><span class="rvts59">data </span><span class="rvts60">&lt;-</span><span class="rvts59"> data</span><span class="rvts60">.</span><span class="rvts59">frame</span><span class="rvts60">(</span><br/><span class="rvts59"> &nbsp; emp_id </span><span class="rvts60">=</span><span class="rvts59"> c </span><span class="rvts60">(</span><span class="rvts61">1</span><span class="rvts60">:</span><span class="rvts61">5</span><span class="rvts60">),</span><span class="rvts59"> </span><br/><span class="rvts59"> &nbsp; emp_name </span><span class="rvts60">=</span><span class="rvts59"> c</span><span class="rvts60">(</span><span class="rvts63">"Rick"</span><span class="rvts60">,</span><span class="rvts63">"Dan"</span><span class="rvts60">,</span><span class="rvts63">"Michelle"</span><span class="rvts60">,</span><span class="rvts63">"Ryan"</span><span class="rvts60">,</span><span class="rvts63">"Gary"</span><span class="rvts60">),</span><br/><span class="rvts59"> &nbsp; salary </span><span class="rvts60">=</span><span class="rvts59"> c</span><span class="rvts60">(</span><span class="rvts61">623.3</span><span class="rvts60">,</span><span class="rvts61">515.2</span><span class="rvts60">,</span><span class="rvts61">611.0</span><span class="rvts60">,</span><span class="rvts61">729.0</span><span class="rvts60">,</span><span class="rvts61">843.25</span><span class="rvts60">),</span><span class="rvts59"> </span><br/><span class="rvts59"> &nbsp; </span><br/><span class="rvts59"> &nbsp; start_date </span><span class="rvts60">=</span><span class="rvts59"> </span><span class="rvts62">as</span><span class="rvts60">.</span><span class="rvts83">Date</span><span class="rvts60">(</span><span class="rvts59">c</span><span class="rvts60">(</span><span class="rvts63">"2012-01-01"</span><span class="rvts60">,</span><span class="rvts59"> </span><span class="rvts63">"2013-09-23"</span><span class="rvts60">,</span><span class="rvts59"> </span><span class="rvts63">"2014-11-15"</span><span class="rvts60">,</span><span class="rvts59"> </span><span class="rvts63">"2014-05-11"</span><span class="rvts60">,</span><br/><span class="rvts59"> &nbsp; &nbsp; &nbsp;</span><span class="rvts63">"2015-03-27"</span><span class="rvts60">)),</span><br/><span class="rvts59"> &nbsp; stringsAsFactors </span><span class="rvts60">=</span><span class="rvts59"> FALSE</span><br/><span class="rvts60">)</span><br/><span class="rvts58"># Print the summary.</span><br/><span class="rvts62">print</span><span class="rvts60">(</span><span class="rvts59">summary</span><span class="rvts60">(</span><span class="rvts59">emp</span><span class="rvts60">.</span><span class="rvts59">data</span><span class="rvts60">))</span><span class="rvts59"> &nbsp;</span></p>
+<p class="rvps20"><span class="rvts54">When we execute the above code, it produces the following result −</span></p>
+<p class="rvps23"><span class="rvts57"> &nbsp; &nbsp; emp_id &nbsp; &nbsp;emp_name &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; salary &nbsp; &nbsp; &nbsp; &nbsp;start_date &nbsp; &nbsp; &nbsp; &nbsp;</span><br/><span class="rvts57"> Min. &nbsp; :1 &nbsp; Length:5 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Min. &nbsp; :515.2 &nbsp; Min. &nbsp; :2012-01-01 &nbsp;</span><br/><span class="rvts57"> 1st Qu.:2 &nbsp; Class :character &nbsp; 1st Qu.:611.0 &nbsp; 1st Qu.:2013-09-23 &nbsp;</span><br/><span class="rvts57"> Median :3 &nbsp; Mode &nbsp;:character &nbsp; Median :623.3 &nbsp; Median :2014-05-11 &nbsp;</span><br/><span class="rvts57"> Mean &nbsp; :3 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Mean &nbsp; :664.4 &nbsp; Mean &nbsp; :2014-01-14 &nbsp;</span><br/><span class="rvts57"> 3rd Qu.:4 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;3rd Qu.:729.0 &nbsp; 3rd Qu.:2014-11-15 &nbsp;</span><br/><span class="rvts57"> Max. &nbsp; :5 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Max. &nbsp; :843.2 &nbsp; Max. &nbsp; :2015-03-27 </span></p>
+<h2 class="rvps21"><span class="rvts0"><span class="rvts56">Extract Data from Data Frame</span></span></h2>
+<p class="rvps20"><span class="rvts54">Extract specific column from a data frame using column name.</span></p>
+<p class="rvps22"><span class="rvts58"># Create the data frame.</span><br/><span class="rvts59">emp</span><span class="rvts60">.</span><span class="rvts59">data </span><span class="rvts60">&lt;-</span><span class="rvts59"> data</span><span class="rvts60">.</span><span class="rvts59">frame</span><span class="rvts60">(</span><br/><span class="rvts59"> &nbsp; emp_id </span><span class="rvts60">=</span><span class="rvts59"> c </span><span class="rvts60">(</span><span class="rvts61">1</span><span class="rvts60">:</span><span class="rvts61">5</span><span class="rvts60">),</span><br/><span class="rvts59"> &nbsp; emp_name </span><span class="rvts60">=</span><span class="rvts59"> c</span><span class="rvts60">(</span><span class="rvts63">"Rick"</span><span class="rvts60">,</span><span class="rvts63">"Dan"</span><span class="rvts60">,</span><span class="rvts63">"Michelle"</span><span class="rvts60">,</span><span class="rvts63">"Ryan"</span><span class="rvts60">,</span><span class="rvts63">"Gary"</span><span class="rvts60">),</span><br/><span class="rvts59"> &nbsp; salary </span><span class="rvts60">=</span><span class="rvts59"> c</span><span class="rvts60">(</span><span class="rvts61">623.3</span><span class="rvts60">,</span><span class="rvts61">515.2</span><span class="rvts60">,</span><span class="rvts61">611.0</span><span class="rvts60">,</span><span class="rvts61">729.0</span><span class="rvts60">,</span><span class="rvts61">843.25</span><span class="rvts60">),</span><br/><span class="rvts59"> &nbsp; </span><br/><span class="rvts59"> &nbsp; start_date </span><span class="rvts60">=</span><span class="rvts59"> </span><span class="rvts62">as</span><span class="rvts60">.</span><span class="rvts83">Date</span><span class="rvts60">(</span><span class="rvts59">c</span><span class="rvts60">(</span><span class="rvts63">"2012-01-01"</span><span class="rvts60">,</span><span class="rvts63">"2013-09-23"</span><span class="rvts60">,</span><span class="rvts63">"2014-11-15"</span><span class="rvts60">,</span><span class="rvts63">"2014-05-11"</span><span class="rvts60">,</span><br/><span class="rvts59"> &nbsp; &nbsp; &nbsp;</span><span class="rvts63">"2015-03-27"</span><span class="rvts60">)),</span><br/><span class="rvts59"> &nbsp; stringsAsFactors </span><span class="rvts60">=</span><span class="rvts59"> FALSE</span><br/><span class="rvts60">)</span><br/><span class="rvts58"># Extract Specific columns.</span><br/><span class="rvts59">result </span><span class="rvts60">&lt;-</span><span class="rvts59"> data</span><span class="rvts60">.</span><span class="rvts59">frame</span><span class="rvts60">(</span><span class="rvts59">emp</span><span class="rvts60">.</span><span class="rvts59">data$emp_name</span><span class="rvts60">,</span><span class="rvts59">emp</span><span class="rvts60">.</span><span class="rvts59">data$salary</span><span class="rvts60">)</span><br/><span class="rvts62">print</span><span class="rvts60">(</span><span class="rvts59">result</span><span class="rvts60">)</span></p>
+<p class="rvps20"><span class="rvts54">When we execute the above code, it produces the following result −</span></p>
+<p class="rvps23"><span class="rvts57"> &nbsp;emp.data.emp_name emp.data.salary</span><br/><span class="rvts57">1 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Rick &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;623.30</span><br/><span class="rvts57">2 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Dan &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;515.20</span><br/><span class="rvts57">3 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Michelle &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;611.00</span><br/><span class="rvts57">4 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Ryan &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;729.00</span><br/><span class="rvts57">5 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Gary &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;843.25</span></p>
+<p class="rvps20"><span class="rvts54">Extract the first two rows and then all columns</span></p>
+<p class="rvps22"><span class="rvts58"># Create the data frame.</span><br/><span class="rvts59">emp</span><span class="rvts60">.</span><span class="rvts59">data </span><span class="rvts60">&lt;-</span><span class="rvts59"> data</span><span class="rvts60">.</span><span class="rvts59">frame</span><span class="rvts60">(</span><br/><span class="rvts59"> &nbsp; emp_id </span><span class="rvts60">=</span><span class="rvts59"> c </span><span class="rvts60">(</span><span class="rvts61">1</span><span class="rvts60">:</span><span class="rvts61">5</span><span class="rvts60">),</span><br/><span class="rvts59"> &nbsp; emp_name </span><span class="rvts60">=</span><span class="rvts59"> c</span><span class="rvts60">(</span><span class="rvts63">"Rick"</span><span class="rvts60">,</span><span class="rvts63">"Dan"</span><span class="rvts60">,</span><span class="rvts63">"Michelle"</span><span class="rvts60">,</span><span class="rvts63">"Ryan"</span><span class="rvts60">,</span><span class="rvts63">"Gary"</span><span class="rvts60">),</span><br/><span class="rvts59"> &nbsp; salary </span><span class="rvts60">=</span><span class="rvts59"> c</span><span class="rvts60">(</span><span class="rvts61">623.3</span><span class="rvts60">,</span><span class="rvts61">515.2</span><span class="rvts60">,</span><span class="rvts61">611.0</span><span class="rvts60">,</span><span class="rvts61">729.0</span><span class="rvts60">,</span><span class="rvts61">843.25</span><span class="rvts60">),</span><br/><span class="rvts59"> &nbsp; </span><br/><span class="rvts59"> &nbsp; start_date </span><span class="rvts60">=</span><span class="rvts59"> </span><span class="rvts62">as</span><span class="rvts60">.</span><span class="rvts83">Date</span><span class="rvts60">(</span><span class="rvts59">c</span><span class="rvts60">(</span><span class="rvts63">"2012-01-01"</span><span class="rvts60">,</span><span class="rvts59"> </span><span class="rvts63">"2013-09-23"</span><span class="rvts60">,</span><span class="rvts59"> </span><span class="rvts63">"2014-11-15"</span><span class="rvts60">,</span><span class="rvts59"> </span><span class="rvts63">"2014-05-11"</span><span class="rvts60">,</span><br/><span class="rvts59"> &nbsp; &nbsp; &nbsp;</span><span class="rvts63">"2015-03-27"</span><span class="rvts60">)),</span><br/><span class="rvts59"> &nbsp; stringsAsFactors </span><span class="rvts60">=</span><span class="rvts59"> FALSE</span><br/><span class="rvts60">)</span><br/><span class="rvts58"># Extract first two rows.</span><br/><span class="rvts59">result </span><span class="rvts60">&lt;-</span><span class="rvts59"> emp</span><span class="rvts60">.</span><span class="rvts59">data</span><span class="rvts60">[</span><span class="rvts61">1</span><span class="rvts60">:</span><span class="rvts61">2</span><span class="rvts60">,]</span><br/><span class="rvts62">print</span><span class="rvts60">(</span><span class="rvts59">result</span><span class="rvts60">)</span></p>
+<p class="rvps20"><span class="rvts54">When we execute the above code, it produces the following result −</span></p>
+<p class="rvps23"><span class="rvts57"> &nbsp;emp_id &nbsp; &nbsp;emp_name &nbsp; salary &nbsp; &nbsp;start_date</span><br/><span class="rvts57">1 &nbsp; &nbsp; &nbsp;1 &nbsp; &nbsp; Rick &nbsp; &nbsp; &nbsp;623.3 &nbsp; &nbsp; 2012-01-01</span><br/><span class="rvts57">2 &nbsp; &nbsp; &nbsp;2 &nbsp; &nbsp; Dan &nbsp; &nbsp; &nbsp; 515.2 &nbsp; &nbsp; 2013-09-23</span></p>
+<p class="rvps20"><span class="rvts54">Extract 3</span><span class="rvts84">rd</span><span class="rvts54">&nbsp;and 5</span><span class="rvts84">th</span><span class="rvts54">&nbsp;row with 2</span><span class="rvts84">nd</span><span class="rvts54">&nbsp;and 4</span><span class="rvts84">th</span><span class="rvts54">&nbsp;column</span></p>
+<p class="rvps22"><span class="rvts58"># Create the data frame.</span><br/><span class="rvts59">emp</span><span class="rvts60">.</span><span class="rvts59">data </span><span class="rvts60">&lt;-</span><span class="rvts59"> data</span><span class="rvts60">.</span><span class="rvts59">frame</span><span class="rvts60">(</span><br/><span class="rvts59"> &nbsp; emp_id </span><span class="rvts60">=</span><span class="rvts59"> c </span><span class="rvts60">(</span><span class="rvts61">1</span><span class="rvts60">:</span><span class="rvts61">5</span><span class="rvts60">),</span><span class="rvts59"> </span><br/><span class="rvts59"> &nbsp; emp_name </span><span class="rvts60">=</span><span class="rvts59"> c</span><span class="rvts60">(</span><span class="rvts63">"Rick"</span><span class="rvts60">,</span><span class="rvts63">"Dan"</span><span class="rvts60">,</span><span class="rvts63">"Michelle"</span><span class="rvts60">,</span><span class="rvts63">"Ryan"</span><span class="rvts60">,</span><span class="rvts63">"Gary"</span><span class="rvts60">),</span><br/><span class="rvts59"> &nbsp; salary </span><span class="rvts60">=</span><span class="rvts59"> c</span><span class="rvts60">(</span><span class="rvts61">623.3</span><span class="rvts60">,</span><span class="rvts61">515.2</span><span class="rvts60">,</span><span class="rvts61">611.0</span><span class="rvts60">,</span><span class="rvts61">729.0</span><span class="rvts60">,</span><span class="rvts61">843.25</span><span class="rvts60">),</span><span class="rvts59"> </span><br/><span class="rvts59"> &nbsp; </span><br/><span class="rvts59"> start_date </span><span class="rvts60">=</span><span class="rvts59"> </span><span class="rvts62">as</span><span class="rvts60">.</span><span class="rvts83">Date</span><span class="rvts60">(</span><span class="rvts59">c</span><span class="rvts60">(</span><span class="rvts63">"2012-01-01"</span><span class="rvts60">,</span><span class="rvts59"> </span><span class="rvts63">"2013-09-23"</span><span class="rvts60">,</span><span class="rvts59"> </span><span class="rvts63">"2014-11-15"</span><span class="rvts60">,</span><span class="rvts59"> </span><span class="rvts63">"2014-05-11"</span><span class="rvts60">,</span><br/><span class="rvts59"> &nbsp; &nbsp; &nbsp;</span><span class="rvts63">"2015-03-27"</span><span class="rvts60">)),</span><br/><span class="rvts59"> &nbsp; stringsAsFactors </span><span class="rvts60">=</span><span class="rvts59"> FALSE</span><br/><span class="rvts60">)</span><br/><span class="rvts58"># Extract 3rd and 5th row with 2nd and 4th column.</span><br/><span class="rvts59">result </span><span class="rvts60">&lt;-</span><span class="rvts59"> emp</span><span class="rvts60">.</span><span class="rvts59">data</span><span class="rvts60">[</span><span class="rvts59">c</span><span class="rvts60">(</span><span class="rvts61">3</span><span class="rvts60">,</span><span class="rvts61">5</span><span class="rvts60">),</span><span class="rvts59">c</span><span class="rvts60">(</span><span class="rvts61">2</span><span class="rvts60">,</span><span class="rvts61">4</span><span class="rvts60">)]</span><br/><span class="rvts62">print</span><span class="rvts60">(</span><span class="rvts59">result</span><span class="rvts60">)</span></p>
+<p class="rvps20"><span class="rvts54">When we execute the above code, it produces the following result −</span></p>
+<p class="rvps23"><span class="rvts57"> &nbsp;emp_name start_date</span><br/><span class="rvts57">3 Michelle 2014-11-15</span><br/><span class="rvts57">5 &nbsp; &nbsp; Gary 2015-03-27</span></p>
+<h2 class="rvps21"><span class="rvts0"><span class="rvts56">Expand Data Frame</span></span></h2>
+<p class="rvps20"><span class="rvts54">A data frame can be expanded by adding columns and rows.</span></p>
+<h3 class="rvps24"><span class="rvts0"><span class="rvts64">Add Column</span></span></h3>
+<p class="rvps20"><span class="rvts54">Just add the column vector using a new column name.</span></p>
+<p class="rvps22"><span class="rvts58"># Create the data frame.</span><br/><span class="rvts59">emp</span><span class="rvts60">.</span><span class="rvts59">data </span><span class="rvts60">&lt;-</span><span class="rvts59"> data</span><span class="rvts60">.</span><span class="rvts59">frame</span><span class="rvts60">(</span><br/><span class="rvts59"> &nbsp; emp_id </span><span class="rvts60">=</span><span class="rvts59"> c </span><span class="rvts60">(</span><span class="rvts61">1</span><span class="rvts60">:</span><span class="rvts61">5</span><span class="rvts60">),</span><span class="rvts59"> </span><br/><span class="rvts59"> &nbsp; emp_name </span><span class="rvts60">=</span><span class="rvts59"> c</span><span class="rvts60">(</span><span class="rvts63">"Rick"</span><span class="rvts60">,</span><span class="rvts63">"Dan"</span><span class="rvts60">,</span><span class="rvts63">"Michelle"</span><span class="rvts60">,</span><span class="rvts63">"Ryan"</span><span class="rvts60">,</span><span class="rvts63">"Gary"</span><span class="rvts60">),</span><br/><span class="rvts59"> &nbsp; salary </span><span class="rvts60">=</span><span class="rvts59"> c</span><span class="rvts60">(</span><span class="rvts61">623.3</span><span class="rvts60">,</span><span class="rvts61">515.2</span><span class="rvts60">,</span><span class="rvts61">611.0</span><span class="rvts60">,</span><span class="rvts61">729.0</span><span class="rvts60">,</span><span class="rvts61">843.25</span><span class="rvts60">),</span><span class="rvts59"> </span><br/><span class="rvts59"> &nbsp; </span><br/><span class="rvts59"> &nbsp; start_date </span><span class="rvts60">=</span><span class="rvts59"> </span><span class="rvts62">as</span><span class="rvts60">.</span><span class="rvts83">Date</span><span class="rvts60">(</span><span class="rvts59">c</span><span class="rvts60">(</span><span class="rvts63">"2012-01-01"</span><span class="rvts60">,</span><span class="rvts59"> </span><span class="rvts63">"2013-09-23"</span><span class="rvts60">,</span><span class="rvts59"> </span><span class="rvts63">"2014-11-15"</span><span class="rvts60">,</span><span class="rvts59"> </span><span class="rvts63">"2014-05-11"</span><span class="rvts60">,</span><br/><span class="rvts59"> &nbsp; &nbsp; &nbsp;</span><span class="rvts63">"2015-03-27"</span><span class="rvts60">)),</span><br/><span class="rvts59"> &nbsp; stringsAsFactors </span><span class="rvts60">=</span><span class="rvts59"> FALSE</span><br/><span class="rvts60">)</span><br/><span class="rvts58"># Add the "dept" coulmn.</span><br/><span class="rvts59">emp</span><span class="rvts60">.</span><span class="rvts59">data$dept </span><span class="rvts60">&lt;-</span><span class="rvts59"> c</span><span class="rvts60">(</span><span class="rvts63">"IT"</span><span class="rvts60">,</span><span class="rvts63">"Operations"</span><span class="rvts60">,</span><span class="rvts63">"IT"</span><span class="rvts60">,</span><span class="rvts63">"HR"</span><span class="rvts60">,</span><span class="rvts63">"Finance"</span><span class="rvts60">)</span><br/><span class="rvts59">v </span><span class="rvts60">&lt;-</span><span class="rvts59"> emp</span><span class="rvts60">.</span><span class="rvts59">data</span><br/><span class="rvts62">print</span><span class="rvts60">(</span><span class="rvts59">v</span><span class="rvts60">)</span></p>
+<p class="rvps20"><span class="rvts54">When we execute the above code, it produces the following result −</span></p>
+<p class="rvps23"><span class="rvts57"> &nbsp;emp_id &nbsp; emp_name &nbsp; &nbsp;salary &nbsp; &nbsp;start_date &nbsp; &nbsp; &nbsp; dept</span><br/><span class="rvts57">1 &nbsp; &nbsp; 1 &nbsp; &nbsp;Rick &nbsp; &nbsp; &nbsp; &nbsp;623.30 &nbsp; &nbsp;2012-01-01 &nbsp; &nbsp; &nbsp; IT</span><br/><span class="rvts57">2 &nbsp; &nbsp; 2 &nbsp; &nbsp;Dan &nbsp; &nbsp; &nbsp; &nbsp; 515.20 &nbsp; &nbsp;2013-09-23 &nbsp; &nbsp; &nbsp; Operations</span><br/><span class="rvts57">3 &nbsp; &nbsp; 3 &nbsp; &nbsp;Michelle &nbsp; &nbsp;611.00 &nbsp; &nbsp;2014-11-15 &nbsp; &nbsp; &nbsp; IT</span><br/><span class="rvts57">4 &nbsp; &nbsp; 4 &nbsp; &nbsp;Ryan &nbsp; &nbsp; &nbsp; &nbsp;729.00 &nbsp; &nbsp;2014-05-11 &nbsp; &nbsp; &nbsp; HR</span><br/><span class="rvts57">5 &nbsp; &nbsp; 5 &nbsp; &nbsp;Gary &nbsp; &nbsp; &nbsp; &nbsp;843.25 &nbsp; &nbsp;2015-03-27 &nbsp; &nbsp; &nbsp; Finance</span></p>
+<h3 class="rvps25"><span class="rvts0"><span class="rvts64">Add Row</span></span></h3>
+<p class="rvps20"><span class="rvts54">To add more rows permanently to an existing data frame, we need to bring in the new rows in the same structure as the existing data frame and use the&nbsp;</span><span class="rvts55">rbind()</span><span class="rvts54">&nbsp;function.</span></p>
+<p class="rvps20"><span class="rvts54">In the example below we create a data frame with new rows and merge it with the existing data frame to create the final data frame.</span></p>
+<p class="rvps22"><span class="rvts58"># Create the first data frame.</span><br/><span class="rvts59">emp</span><span class="rvts60">.</span><span class="rvts59">data </span><span class="rvts60">&lt;-</span><span class="rvts59"> data</span><span class="rvts60">.</span><span class="rvts59">frame</span><span class="rvts60">(</span><br/><span class="rvts59"> &nbsp; emp_id </span><span class="rvts60">=</span><span class="rvts59"> c </span><span class="rvts60">(</span><span class="rvts61">1</span><span class="rvts60">:</span><span class="rvts61">5</span><span class="rvts60">),</span><span class="rvts59"> </span><br/><span class="rvts59"> &nbsp; emp_name </span><span class="rvts60">=</span><span class="rvts59"> c</span><span class="rvts60">(</span><span class="rvts63">"Rick"</span><span class="rvts60">,</span><span class="rvts63">"Dan"</span><span class="rvts60">,</span><span class="rvts63">"Michelle"</span><span class="rvts60">,</span><span class="rvts63">"Ryan"</span><span class="rvts60">,</span><span class="rvts63">"Gary"</span><span class="rvts60">),</span><br/><span class="rvts59"> &nbsp; salary </span><span class="rvts60">=</span><span class="rvts59"> c</span><span class="rvts60">(</span><span class="rvts61">623.3</span><span class="rvts60">,</span><span class="rvts61">515.2</span><span class="rvts60">,</span><span class="rvts61">611.0</span><span class="rvts60">,</span><span class="rvts61">729.0</span><span class="rvts60">,</span><span class="rvts61">843.25</span><span class="rvts60">),</span><span class="rvts59"> </span><br/><span class="rvts59"> &nbsp; </span><br/><span class="rvts59"> &nbsp; start_date </span><span class="rvts60">=</span><span class="rvts59"> </span><span class="rvts62">as</span><span class="rvts60">.</span><span class="rvts83">Date</span><span class="rvts60">(</span><span class="rvts59">c</span><span class="rvts60">(</span><span class="rvts63">"2012-01-01"</span><span class="rvts60">,</span><span class="rvts59"> </span><span class="rvts63">"2013-09-23"</span><span class="rvts60">,</span><span class="rvts59"> </span><span class="rvts63">"2014-11-15"</span><span class="rvts60">,</span><span class="rvts59"> </span><span class="rvts63">"2014-05-11"</span><span class="rvts60">,</span><br/><span class="rvts59"> &nbsp; &nbsp; &nbsp;</span><span class="rvts63">"2015-03-27"</span><span class="rvts60">)),</span><br/><span class="rvts59"> &nbsp; dept </span><span class="rvts60">=</span><span class="rvts59"> c</span><span class="rvts60">(</span><span class="rvts63">"IT"</span><span class="rvts60">,</span><span class="rvts63">"Operations"</span><span class="rvts60">,</span><span class="rvts63">"IT"</span><span class="rvts60">,</span><span class="rvts63">"HR"</span><span class="rvts60">,</span><span class="rvts63">"Finance"</span><span class="rvts60">),</span><br/><span class="rvts59"> &nbsp; stringsAsFactors </span><span class="rvts60">=</span><span class="rvts59"> FALSE</span><br/><span class="rvts60">)</span><br/><span class="rvts58"># Create the second data frame</span><br/><span class="rvts59">emp</span><span class="rvts60">.</span><span class="rvts59">newdata </span><span class="rvts60">&lt;-</span><span class="rvts59"> &nbsp;data</span><span class="rvts60">.</span><span class="rvts59">frame</span><span class="rvts60">(</span><br/><span class="rvts59"> &nbsp; emp_id </span><span class="rvts60">=</span><span class="rvts59"> c </span><span class="rvts60">(</span><span class="rvts61">6</span><span class="rvts60">:</span><span class="rvts61">8</span><span class="rvts60">),</span><span class="rvts59"> </span><br/><span class="rvts59"> &nbsp; emp_name </span><span class="rvts60">=</span><span class="rvts59"> c</span><span class="rvts60">(</span><span class="rvts63">"Rasmi"</span><span class="rvts60">,</span><span class="rvts63">"Pranab"</span><span class="rvts60">,</span><span class="rvts63">"Tusar"</span><span class="rvts60">),</span><br/><span class="rvts59"> &nbsp; salary </span><span class="rvts60">=</span><span class="rvts59"> c</span><span class="rvts60">(</span><span class="rvts61">578.0</span><span class="rvts60">,</span><span class="rvts61">722.5</span><span class="rvts60">,</span><span class="rvts61">632.8</span><span class="rvts60">),</span><span class="rvts59"> </span><br/><span class="rvts59"> &nbsp; start_date </span><span class="rvts60">=</span><span class="rvts59"> </span><span class="rvts62">as</span><span class="rvts60">.</span><span class="rvts83">Date</span><span class="rvts60">(</span><span class="rvts59">c</span><span class="rvts60">(</span><span class="rvts63">"2013-05-21"</span><span class="rvts60">,</span><span class="rvts63">"2013-07-30"</span><span class="rvts60">,</span><span class="rvts63">"2014-06-17"</span><span class="rvts60">)),</span><br/><span class="rvts59"> &nbsp; dept </span><span class="rvts60">=</span><span class="rvts59"> c</span><span class="rvts60">(</span><span class="rvts63">"IT"</span><span class="rvts60">,</span><span class="rvts63">"Operations"</span><span class="rvts60">,</span><span class="rvts63">"Fianance"</span><span class="rvts60">),</span><br/><span class="rvts59"> &nbsp; stringsAsFactors </span><span class="rvts60">=</span><span class="rvts59"> FALSE</span><br/><span class="rvts60">)</span><br/><span class="rvts58"># Bind the two data frames.</span><br/><span class="rvts59">emp</span><span class="rvts60">.</span><span class="rvts59">finaldata </span><span class="rvts60">&lt;-</span><span class="rvts59"> rbind</span><span class="rvts60">(</span><span class="rvts59">emp</span><span class="rvts60">.</span><span class="rvts59">data</span><span class="rvts60">,</span><span class="rvts59">emp</span><span class="rvts60">.</span><span class="rvts59">newdata</span><span class="rvts60">)</span><br/><span class="rvts62">print</span><span class="rvts60">(</span><span class="rvts59">emp</span><span class="rvts60">.</span><span class="rvts59">finaldata</span><span class="rvts60">)</span></p>
+<p class="rvps20"><span class="rvts54">When we execute the above code, it produces the following result −</span></p>
+<p class="rvps23"><span class="rvts57"> &nbsp;emp_id &nbsp; &nbsp; emp_name &nbsp; &nbsp;salary &nbsp; &nbsp; start_date &nbsp; &nbsp; &nbsp; dept</span><br/><span class="rvts57">1 &nbsp; &nbsp; &nbsp;1 &nbsp; &nbsp; Rick &nbsp; &nbsp; &nbsp; &nbsp;623.30 &nbsp; &nbsp; 2012-01-01 &nbsp; &nbsp; &nbsp; IT</span><br/><span class="rvts57">2 &nbsp; &nbsp; &nbsp;2 &nbsp; &nbsp; Dan &nbsp; &nbsp; &nbsp; &nbsp; 515.20 &nbsp; &nbsp; 2013-09-23 &nbsp; &nbsp; &nbsp; Operations</span><br/><span class="rvts57">3 &nbsp; &nbsp; &nbsp;3 &nbsp; &nbsp; Michelle &nbsp; &nbsp;611.00 &nbsp; &nbsp; 2014-11-15 &nbsp; &nbsp; &nbsp; IT</span><br/><span class="rvts57">4 &nbsp; &nbsp; &nbsp;4 &nbsp; &nbsp; Ryan &nbsp; &nbsp; &nbsp; &nbsp;729.00 &nbsp; &nbsp; 2014-05-11 &nbsp; &nbsp; &nbsp; HR</span><br/><span class="rvts57">5 &nbsp; &nbsp; &nbsp;5 &nbsp; &nbsp; Gary &nbsp; &nbsp; &nbsp; &nbsp;843.25 &nbsp; &nbsp; 2015-03-27 &nbsp; &nbsp; &nbsp; Finance</span><br/><span class="rvts57">6 &nbsp; &nbsp; &nbsp;6 &nbsp; &nbsp; Rasmi &nbsp; &nbsp; &nbsp; 578.00 &nbsp; &nbsp; 2013-05-21 &nbsp; &nbsp; &nbsp; IT</span><br/><span class="rvts57">7 &nbsp; &nbsp; &nbsp;7 &nbsp; &nbsp; Pranab &nbsp; &nbsp; &nbsp;722.50 &nbsp; &nbsp; 2013-07-30 &nbsp; &nbsp; &nbsp; Operations</span><br/><span class="rvts57">8 &nbsp; &nbsp; &nbsp;8 &nbsp; &nbsp; Tusar &nbsp; &nbsp; &nbsp; 632.80 &nbsp; &nbsp; 2014-06-17 &nbsp; &nbsp; &nbsp; Fianance</span></p>
+<p></p>
+<p class="rvps4" style="clear: both;"><span class="rvts18">Created with the Personal Edition of HelpNDoc: </span><a class="rvts19" href="https://www.helpndoc.com/help-authoring-tool">Full-featured multi-format Help generator</a></p>
+
+            </div>
+            
+            <div id="topic_footer"><div id="topic_footer_content">Copyright &copy; &lt;Dates&gt; by &lt;Authors&gt;. All Rights Reserved.</div></div>
+        </div>  <!-- /#topic-content -->
+    </article>
+
+    <footer></footer>
+
+  </div>  <!-- /#main -->
+
+  <div class="mask" data-toggle="sm-nav-expanded"></div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="hndModal" tabindex="-1" role="dialog" aria-labelledby="hndModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="hndModalLabel"></h4>
+        </div>
+        <div class="modal-body">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary modal-btn-close" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="vendors/jquery-1.11.3/jquery.min.js"></script>
+  <script src="vendors/bootstrap-3.3.6/js/bootstrap.min.js"></script>
+  <script src="vendors/fastclick-1.0.6/fastclick.min.js"></script>
+  <script src="vendors/markjs-8.8.3/jquery.mark.min.js"></script>
+  <script src="vendors/uri-1.18.9/uri.min.js"></script>
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <script src="vendors/bootstrap-3.3.6/js/ie10-viewport-bug-workaround.js"></script>
+  
+  <!-- Headroom -->
+  <script src="vendors/headroom-0.9.3/headroom.min.js"></script>
+  <script src="vendors/headroom-0.9.3/jquery.headroom.min.js"></script>
+
+  <!-- JsTree -->
+  <script src="vendors/jstree-3.3.2/jstree.min.js"></script>
+
+  <!-- HelpNDoc scripts -->
+  <script src="_translations.js"></script>
+  <script src="js/hndsd.min.js"></script>
+  <script src="js/hndse.min.js"></script>
+  <script src="js/app.min.js"></script>
+
+  <!-- Scripts -->
+  <script>
+    $(function() {
+      // Instanciate FastClick
+      Origami.fastclick(document.body);
+      // Create the app
+      var app = new Hnd.App();
+      // Update translations
+      hnd_ut(app);
+	  // Custom JS
+	  
+      // Boot the app
+      app.Boot();
+    });
+  </script>
+
+
+
+</body>
+
+</html>
+
